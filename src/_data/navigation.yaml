@@ -1,4 +1,6 @@
 ---
 items:
   - text: Blog
-    url: "/blog"
+    url: "/blog/"
+  - text: Uses
+    url: "/uses/"
