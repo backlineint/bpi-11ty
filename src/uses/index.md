@@ -28,3 +28,6 @@ Here are some of the VS Code extensions I rely on:
 I keep a pretty stock Mac config, but can't live without the following:
 
 * [Unclutter](https://unclutterapp.com/) - Keeps the digital mess hidden away. Without this installed, my Mac feels broken.
+* Evernote
+* All Things Done
+* Sonos

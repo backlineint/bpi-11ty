@@ -1,6 +1,12 @@
 ---
 items:
-  - text: Blog
-    url: "/blog/"
+  - text: About
+    url: "#"
+  - text: Posts
+    url: "/posts/"    
+  - text: TIL
+    url: "#"
+  - text: Jams
+    url: "#"
   - text: Uses
     url: "/uses/"
