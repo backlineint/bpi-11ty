@@ -7,6 +7,6 @@ items:
   - text: TIL
     url: "/til/"
   - text: Jams
-    url: "#"
+    url: "/jams/"
   - text: Uses
     url: "/uses/"
