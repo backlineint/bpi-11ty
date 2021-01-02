@@ -5,7 +5,7 @@ items:
   - text: Posts
     url: "/posts/"    
   - text: TIL
-    url: "#"
+    url: "/til/"
   - text: Jams
     url: "#"
   - text: Uses
