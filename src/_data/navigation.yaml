@@ -1,7 +1,7 @@
 ---
 items:
   - text: About
-    url: "#"
+    url: "/about/"
   - text: Posts
     url: "/posts/"    
   - text: TIL

@@ -31,3 +31,4 @@ I keep a pretty stock Mac config, but can't live without the following:
 * Evernote
 * All Things Done
 * Sonos
+* Dropover
