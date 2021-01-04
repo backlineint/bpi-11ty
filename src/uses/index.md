@@ -32,3 +32,8 @@ I keep a pretty stock Mac config, but can't live without the following:
 * All Things Done
 * Sonos
 * Dropover
+* Last Pass
+  
+## Desk Setup
+
+* Headphones

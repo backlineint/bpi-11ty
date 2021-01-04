@@ -8,3 +8,5 @@ tags:
 ---
 
 Netlify info.
+
+Maybe collections instead?
