@@ -7,3 +7,5 @@ tags:
   - blog
 ---
 I was on the Drupal Easy podcast to talk about component based theming, but didn't think I had a solid answer to the question, where should I start.
+
+Is it just 'Use Emulsify?' and if not, why? And what should they use instead?
