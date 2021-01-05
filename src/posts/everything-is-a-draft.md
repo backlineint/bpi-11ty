@@ -7,3 +7,5 @@ tags:
   - blog
 ---
 A simple change - don't sort by published date, sort by updated date.
+
+Look, I just updated this to see what Netlify CMS does.
