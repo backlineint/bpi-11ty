@@ -14,6 +14,8 @@ Inspired by [Wes Bos](https://wesbos.com/uses) and [uses.tech](https://uses.tech
 * Work - 2020 Intel MacBook Pro 16' - Rocked a 2015 15' MacBook pro for a very long time. Even though this is kind of an awkward time to take on a new intel Mac, my trusty 2015 was barely limping along.
 * Tablet - 10.5' iPad Pro
 * Phone - iPhone 12 Pro - I'm one of those jerks on the iPhone upgrade plan.
+* Magic Trackpad 2 (taught myself to use a trackpad left handed due to RSI issues)
+* Magic Keyboard
 
 ## IDE
 
