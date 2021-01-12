@@ -1,14 +1,14 @@
 ---
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: Bounteous
+    url: "https://bounteous.com"
+    desc: Evolving bounteous.com using Gatsby and Drupal.
+  - title: Drupal Component Integration
+    url: "https://github.com/backlineint/component-integration"
+    desc: "'An Overview of Drupal Component Integration Methods' presentation and development sandbox."
+  - title: Holly Hunt
+    url: "https://hollyhunt.com"
+    desc: An updated web presence for the defining voice in modern luxury interiors.
+  - title: brianperry.dev
+    url: "https://brianperry.dev/"
+    desc: This here website.
