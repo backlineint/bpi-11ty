@@ -134,6 +134,11 @@ Also install:
 * [Install Ansible via Homebrew](https://formulae.brew.sh/formula/ansible#default)
 
 ### Docker
+
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+  * In Docker Desktop preferences, disable starting Docker upon login.
+* Install [Lando](https://github.com/lando/lando/releases) (assuming that the version packaged with Lando is reasonable, you could install Docker Desktop as part of installing Lando)
+
 ## Dock
 
 * Rip a bunch of nonsense out of the dock.
