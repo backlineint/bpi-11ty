@@ -86,6 +86,25 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) and en
 
 Plus many more that will be triggered by project configuration.
 
+I also add the following settings in the user version of settings.json
+
+```javascript
+{
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'Source Code Pro for Powerline', Menlo, Monaco, 'Courier New', monospace",
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 1,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "files.associations": {
+      "*.theme": "php"
+    },
+}
+```
+
 Also install:
 * [PHP Storm](https://www.jetbrains.com/phpstorm/) because their visual merge conflict resolution tool is still way better than VS Code.
 * [Atom](https://atom.io/) as a lightweight alternative for when you need one.
