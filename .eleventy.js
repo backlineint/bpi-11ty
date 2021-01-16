@@ -12,7 +12,8 @@ async function imageShortcode(src, alt, classes = "object-cover h-full w-full", 
 
   let metadata = await Image(src, {
     widths: [300, 600],
-    formats: ['webp', 'jpeg']
+    formats: ['webp', 'jpeg'],
+    outputDir: "./_site/img/"
   });
 
   let lowsrc = metadata.jpeg[0];
@@ -74,7 +75,6 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
-  eleventyConfig.addPassthroughCopy("./img");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
