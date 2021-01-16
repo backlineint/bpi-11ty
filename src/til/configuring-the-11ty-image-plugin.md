@@ -11,3 +11,5 @@ https://www.11ty.dev/docs/plugins/image/
 Adding classes.
 
 Substantially simpler than Gatsby image (although I think this is changing), but can still do a lot of the sharp things.
+
+Had to write images directly to output directory to get around .gitignore issues.
