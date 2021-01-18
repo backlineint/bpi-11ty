@@ -2,7 +2,7 @@ import { LitElement, html } from "https://cdn.skypack.dev/lit-element";
 
 function teamMemberTemplate(name, title, description) {
     return html`
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <div class="p-4 lg:w-1/2">
         <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
         <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://placeimg.com/640/480/any">
