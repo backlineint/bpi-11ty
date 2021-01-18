@@ -3,6 +3,8 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
+const addWebComponentDefinitions = require('eleventy-plugin-add-web-component-definitions')
+
 
 async function imageShortcode(src, alt, classes = "object-cover h-full w-full", sizes = "100vw") {
   if(alt === undefined) {
@@ -50,6 +52,11 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Automatic web compnent import
+  eleventyConfig.addPlugin(addWebComponentDefinitions, { 
+    path: tag => `/components/${tag}.js`
+  });
+
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
@@ -70,11 +77,14 @@ module.exports = function (eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
+    "./static/css/prism-tomorrow.css",
   });
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+
+  // Copy Components Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/components");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");

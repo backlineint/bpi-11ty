@@ -3,7 +3,7 @@ links:
   - title: Bounteous
     url: "https://bounteous.com"
     desc: Evolving bounteous.com using Gatsby and Drupal.
-  - title: Drupal Component Integration
+  - title: Component Integration
     url: "https://github.com/backlineint/component-integration"
     desc: "'An Overview of Drupal Component Integration Methods' presentation and development sandbox."
   - title: Holly Hunt
