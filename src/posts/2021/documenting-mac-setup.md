@@ -3,7 +3,7 @@ title: Documenting My Mac Setup
 description: "Hey future self: this is what you do when you set up a new Mac"
 author: Brian
 date: Last Modified
-publishedDate: 2021-01-04T21:26:28.456Z
+publishedDate: 2021-01-24
 tags:
   - mac
 ---
@@ -13,7 +13,7 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 ## Prerequisites
 * Make a cup of coffee.
 * Make sure you have your 2FA apps handy
-* For anything that isn't in version control or in the cloud (hopefully reducing every time you do this), copy over files using a USB drive.
+* For anything that isn't in version control or in the cloud (hopefully that list gets smaller every time you do this), copy over files using a USB drive.
 
 ## System Preferences
 * If I'm using multiple monitors, configure monitor orientation under System Preferences -> Displays.
@@ -25,7 +25,7 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 * Sign in and enable iCloud
 * System Preferences -> Mission Control
   * Disable 'automatically rearrange spaces based on most recent use'
-  * Disable 'displays have separate spaces' (although I have been toying with trying this)
+  * Disable 'displays have separate spaces'
 
 ## Software
 
@@ -46,9 +46,9 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 * Set up email. Outlook if a work machine. Log into [Hey](https://hey.com/).
 * Download and configure [Bartender](https://www.macbartender.com/)
 * Tunes - Install Sonos and set up account in Apple Music App.
-* Postman
-* Sketch
-* Creative Cloud / Photoshop
+* [Postman](https://www.postman.com/) - for API debugging
+* [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
+* Creative Cloud / Photoshop  
 
 ## Terminal and SSH
 
@@ -68,22 +68,22 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 ## IDE(s)
 
 Download and install [Visual Studio Code](https://code.visualstudio.com/) and enable the following extensions:
-* Markdown all in one
-* Markdown Preview Enhanced
-* Code Spell Checker
-* Empty Indent
-* Indent Rainbow
-* Eslint
-* Gitlens
-* HTML CSS Support
-* PHP Debug
-* PHP Doc Blocker
-* PHP Intelephense
-* phpcbf
-* phpcs
-* Prettier
-* Twig
-* Debugger for Chrome
+* [Markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+* [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+* [Empty Indent](https://marketplace.visualstudio.com/items?itemName=DmitryDorofeev.empty-indent)
+* [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+* [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+* [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+* [PHP Doc Blocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+* [PHP Intelephense](https://marketplace.visualstudio.com/search?term=php%20doc%20blocker&target=VSCode&category=All%20categories&sortBy=Relevance)
+* [phpcbf](https://marketplace.visualstudio.com/items?itemName=persoderlind.vscode-phpcbf)
+* [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs)
+* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Twig](https://marketplace.visualstudio.com/items?itemName=whatwedo.twig)
+* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 Plus many more that will be triggered by project configuration.
 
@@ -143,24 +143,16 @@ Also install:
 ## Dock
 
 * Rip a bunch of nonsense out of the dock.
-* Add:
-  * Outlook
-  * Things
-  * Chrome
-  * VS Code
-  * Slack
-  * Terminal
-  * Evernote
-  * Sonos
+* Add: Outlook, Things, Chrome, VS Code, Slack, Terminal, Evernote, Sonos
 
 ## Things to install as needed:
-* Audio Hijack
-* Deckset
+* [Audio Hijack](https://rogueamoeba.com/audiohijack/)
+* [Deckset](https://www.deckset.com/)
 * Dropbox (hoping to find my way out of Dropbox...)
-* EncryptMe
+* [EncryptMe](https://encrypt.me/)
 * FileZilla
-* Kap
-* Mmhmm
+* [Kap](https://getkap.co/)
+* [Mmhmm](https://www.mmhmm.app/)
 * XCode
 
 You did it. Take a nap.
