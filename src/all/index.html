@@ -1,12 +1,12 @@
 ---
 layout: blog
 eleventyExcludeFromCollections: 
-    truetags: jams
-title: "Jams"
+    truetags: post
+title: "All Updates"
 ---
 
-<section class="mt-15">
-    {% set postslist = collections.jams %}
+<section>
+    {% set postslist = collections.all %}
 
     {% for post in postslist | reverse %}
         <article class="my-8">

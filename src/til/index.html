@@ -20,11 +20,9 @@ title: "Today I Learned"
                 </a>
             </h2>
             <p class="text-base leading-6 text-gray-500 mb-3">
+                Updated
                 <time>
                     {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
-
                 </time>
             </p>
             {% if post.data.description %}

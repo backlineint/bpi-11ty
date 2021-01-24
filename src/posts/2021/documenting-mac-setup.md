@@ -2,7 +2,8 @@
 title: Documenting My Mac Setup
 description: "Hey future self: this is what you do when you set up a new Mac"
 author: Brian
-date: 2021-01-04T21:26:28.456Z
+date: Last Modified
+publishedDate: 2021-01-04T21:26:28.456Z
 tags:
   - mac
 ---
