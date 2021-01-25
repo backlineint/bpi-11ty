@@ -3,7 +3,8 @@ title: Gatsby Debugging in VS Code
 description: A few useful links to configure server and client side debugging in
   Gatsby projects
 author: Brian
-date: 2021-01-06T18:00:01.021Z
+date: Last Modified
+publishedDate: 2021-01-24
 tags:
   - til
 ---
