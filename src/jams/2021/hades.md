@@ -2,7 +2,10 @@
 title: Hades
 description: A narratively complex roguelike on Nintendo Switch
 author: Brian
-date: 2021-01-03T21:26:28.456Z
+date: Last Modified
+publishedDate: 2021-01-25
+imagePath: ./src/jams/2021/hades.jpg
+alt: Hades Title Screen
 tags:
   - nintendo
 ---

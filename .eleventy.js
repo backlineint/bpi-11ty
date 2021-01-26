@@ -34,6 +34,12 @@ async function imageShortcode(src, alt, classes = "object-cover h-full w-full", 
 }
 
 module.exports = function (eleventyConfig) {
+  // Also copy images if they exist alongside content
+  eleventyConfig.addTemplateFormats([
+    "jpg",
+    "png"
+  ]);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
