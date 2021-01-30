@@ -17,7 +17,7 @@ prism: true
     </div>
     <article class="prose lg:prose-xl my-4 mx-auto">
         {% if imagePath %}
-            {% image imagePath, alt, "object-cover object-offset-x-35 h-full w-full" %}
+            {% image imagePath, alt, false, "object-cover object-offset-x-35 h-full w-full" %}
         {% endif %}
         {{ content | safe }}</article>
 

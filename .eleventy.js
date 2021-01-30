@@ -4,14 +4,16 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt, classes = "object-cover h-full w-full", sizes = "100vw") {
+async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
 
+  const widths = small ? [300, 600] : [300, 600, 800, 1600];
+
   let metadata = await Image(src, {
-    widths: [300, 600],
+    widths: widths,
     formats: ['webp', 'jpeg'],
     outputDir: "./_site/img/"
   });
