@@ -2,9 +2,11 @@
 title: About
 description: If one was to decribe Brian Perry, it would be something like this.
 author: Brian
-date: Last Modified
-publishedDate: 2021-01-02
+date: 2021-01-27
+updatedDate: 2021-01-27
 layout: about.html
+imagePath: ./src/static/img/profile_crop.jpg
+alt: "Brian Perry"
 ---
 
 As is likely obvious by now, I enjoy doing computer-y things, specifically web development. I work for a digital agency called [Bounteous](https://bounteous.com) and my current title is Associate Principle Architect. I don't know what that title means either, but I work primarily within our Drupal practice leading front end development efforts. I'm also an active member of the [Drupal community](https://www.drupal.org/community), [speaking at events](https://noti.st/brianperry) and [contributing back to the Drupal ecosystem.](https://www.drupal.org/u/brianperry) Over my nearly ten years working with Drupal I have primarily focused my efforts on approaches to component based development.    

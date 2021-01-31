@@ -2,7 +2,8 @@
 title: Uses
 description: A rundown of all of the hardware, software, and setup for my day to day tech life.
 author: Brian
-date: 2021-01-01
+date: 2021-01-26
+updatedDate: 2021-01-26
 layout: posts.html
 ---
 
