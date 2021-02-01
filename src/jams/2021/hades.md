@@ -19,6 +19,8 @@ Hades strongly encourages you to play with different loadouts. While I have favo
 
 If someone explained all of the progression systems in Hades to me before I played the game, I would have been turned off by the complexity. But one of the game's many magic tricks is how it introduces them to you slowly over time as to not overwhelm the player. In fact, you could argue that the game doesn't fully open up until you survive your first full run. Never have I been so motivated to keep playing after I 'beat' the final boss. And if you don't understand, or aren't interested in some of the systems, it is probably fine. Don't feel like playing the fishing mini-game that pops up later on? Hades won't be mad at you.
 
-Story
+#### Story
+
+When you die during a run in Hades you start over at the beginning and lose many of the skills and items you gained during that run. That seems like it would make a meaningful story somewhat impossible, but 
 
 God mode tip.
