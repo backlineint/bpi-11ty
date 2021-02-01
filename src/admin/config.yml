@@ -12,9 +12,9 @@ public_folder: "/static/img"
 local_backend: true
 publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "src/posts"
+  - label: "Posts"
+    name: "posts"
+    folder: "src/posts/2021"
     create: true
     editor:
       preview: true
@@ -23,16 +23,17 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Updated Date", name: "updatedDate", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["blog", "Tags", "created", "from", "config.yml"]
+        options: ["drupal"]
   - label: "Today I Learned"
     name: "til"
-    folder: "src/til"
+    folder: "src/til/2021"
     create: true
     editor:
       preview: true
@@ -41,16 +42,17 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Updated Date", name: "updatedDate", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["til", "Tags", "created", "from", "config.yml"]
+        options: ["drupal"]
   - label: "Jams"
     name: "jams"
-    folder: "src/jams"
+    folder: "src/jams/2021"
     create: true
     editor:
       preview: true
@@ -59,13 +61,14 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Updated Date", name: "updatedDate", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["jams", "Tags", "created", "from", "config.yml"]
+        options: ["games", "music"]
   - label: "Settings"
     name: "settings"
     editor:

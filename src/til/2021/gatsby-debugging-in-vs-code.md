@@ -5,8 +5,6 @@ description: A few useful links to configure server and client side debugging in
 author: Brian
 date: 2021-01-29
 updatedDate: 2021-01-29
-tags:
-  - til
 ---
 I've actually never had JS debugging working correctly in my Gatsby projects, which has always bugged me. With the help of a few guides today I learned how to change that.
 
