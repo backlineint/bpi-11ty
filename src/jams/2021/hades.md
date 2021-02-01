@@ -5,7 +5,7 @@ author: Brian
 date: 2021-01-30
 updatedDate: 2021-01-30
 imagePath: ./src/jams/2021/hades.jpg
-alt: Hades Title Screen
+alt: Entering the underworld
 ---
 
 About hades.

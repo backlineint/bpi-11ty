@@ -5,6 +5,8 @@ author: Brian
 date: 2021-01-26
 updatedDate: 2021-01-26
 layout: posts.html
+imagePath: ./src/uses/uses.jpg
+alt: My desk
 ---
 
 Inspired by [Wes Bos](https://wesbos.com/uses) and [uses.tech](https://uses.tech/), this is a living document that outlines all of the hardware, software, and other gadgets that I use in my day-to-day setup. It would be icing on the cake if others find this useful, but I mainly maintain it for my future self when setting up a new machine.
