@@ -30,6 +30,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
+        required: false
         options: ["drupal"]
   - label: "Today I Learned"
     name: "til"
@@ -49,6 +50,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
+        required: false
         options: ["drupal"]
   - label: "Jams"
     name: "jams"
@@ -68,6 +70,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
+        required: false
         options: ["games", "music"]
   - label: "Settings"
     name: "settings"
