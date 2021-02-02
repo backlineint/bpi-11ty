@@ -3,7 +3,6 @@ title: Documenting My Mac Setup
 description: "Hey future self: this is what you do when you set up a new Mac"
 author: Brian
 date: 2021-01-28
-updatedDate: 2021-01-28
 tags:
   - mac
 ---
@@ -48,7 +47,7 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 * Tunes - Install Sonos and set up account in Apple Music App.
 * [Postman](https://www.postman.com/) - for API debugging
 * [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
-* Creative Cloud / Photoshop  
+* Creative Cloud / Photoshop
 
 ## Terminal and SSH
 

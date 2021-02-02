@@ -4,8 +4,7 @@ alt: Entering the underworld
 title: Hades
 description: A narratively complex roguelike on Nintendo Switch
 author: Brian
-date: 2021-01-30
-updatedDate: 2021-02-01T13:47:25.422Z
+date: 2021-02-01
 tags:
   - games
 ---

@@ -3,7 +3,6 @@ title: Uses
 description: A rundown of all of the hardware, software, and setup for my day to day tech life.
 author: Brian
 date: 2021-01-26
-updatedDate: 2021-01-26
 layout: posts.html
 imagePath: ./src/uses/uses.jpg
 alt: My desk
@@ -38,7 +37,7 @@ I keep a pretty stock Mac config, but can't live without the following:
 * Sonos
 * Dropover
 * Last Pass
-  
+
 ## Desk Setup
 
 * Headphones
