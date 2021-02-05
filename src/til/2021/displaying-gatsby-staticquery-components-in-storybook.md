@@ -1,5 +1,5 @@
 ---
-title: Displaying Gatsby StaticQuery Components in Storybook
+title: Mocking Gatsby StaticQuery Components For Storybook
 description: StaticQueries recently introduced in our codebase were preventing
   them from displaying in Storybook. Here's how I fixed it.
 author: Brian
