@@ -9,3 +9,7 @@ tags:
   - drupal
 ---
 Link to post with custom css.
+
+https://truongnguyen.io/blog/netlify-cms-mobile-responsive-css/#highlighted-post
+
+https://github.com/netlify/netlify-cms/issues/441#issuecomment-619432432
