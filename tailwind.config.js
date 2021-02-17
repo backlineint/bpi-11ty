@@ -14,6 +14,9 @@ module.exports = {
       colors: {},
       objectPosition: {
         'offset-x-35': '35%'
+      },
+      flex: {
+        '2': '2 2 0%',
       }
     },
   },
