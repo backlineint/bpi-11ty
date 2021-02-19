@@ -1,8 +1,8 @@
 ---
 title: Configuring gatsby-source-drupal to only Import Referenced Images
-description: Finding the right combination of configuration for this module was difficult
+description: Configuring the gatsby-source-drupal plugin to only import a subset of your content is possible, but wasn't immediately clear to me from the docs.
 author: Brian
-date: 2021-02-16
+date: 2021-02-19
 tags:
   - drupal
 ---
@@ -10,7 +10,7 @@ We've recently started using [Gatsby](https://www.gatsbyjs.com/) on [Bounteous.c
 
 The gatsby-source-drupal plugin pulls data from Drupal’s JSON:API endpoints and makes this data available to React components via Gatsby’s GraphQL API. By default, the plugin imports all data from the source Drupal site. Since for this initial phase Gatsby would only be used to build a small subset of pages, most of this data was unnecessary and also would have the side effect of greatly increasing our build times.
 
-As an initial attempt to solve this problem, we used Drupal’s JSON:API Extras module to only expose the resources that our Gatsby build needed to depend on. This helped, but we still eventually needed to enable the file resource, which pretty much immediately sunk our build times. Gatsby was now importing (and worse yet processing) local versions of years worth of images that we didn’t need to support our new content. We eventually found that it was possible to configure gatsby-source-drupal to only import the files referenced by content that was necessary for our builds, but it required a combination of configuration options that wasn’t completely obvious from the documentation.
+As an initial attempt to solve this problem, we used Drupal’s [JSON:API Extras module](https://www.drupal.org/project/jsonapi_extras) to only expose the resources that our Gatsby build needed to depend on. This helped, but we still eventually needed to enable the file resource, which pretty much immediately sunk our build times. Gatsby was now importing (and worse yet processing) local versions of years worth of images that we didn’t need to support our new content. We eventually found that it was possible to configure gatsby-source-drupal to only import the files referenced by content that was necessary for our builds, but it required a combination of configuration options that wasn’t completely obvious from the documentation.
 
 The first step was to add the file resource as a [disallowed link type](https://www.gatsbyjs.com/plugins/gatsby-source-drupal/#disallowed-link-types):
 
@@ -60,4 +60,4 @@ module.exports = {
 }
 ```
 
-With this configuration if a featured post paragraph is used on the homepage, any associated background images (field_dfp_bg_img) will be sourced by Gatsby as well.
+With this configuration, if a featured post paragraph is used on the homepage, any associated background images (field_dfp_bg_img) will be sourced by Gatsby as well. While it does require some maintenance as we incorporate new entities into our builds, it has kept our build times quite reasonable thus far.
