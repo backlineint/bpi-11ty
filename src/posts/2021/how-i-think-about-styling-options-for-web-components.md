@@ -4,6 +4,7 @@ description: |-
   Still learning, but here is my current thought.
 
   A video walking through the codepen demo
+  Try recording video with Camo
 author: Brian
 date: 2021-02-19T19:28:32.796Z
 ---
