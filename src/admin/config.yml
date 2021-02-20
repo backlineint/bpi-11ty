@@ -30,7 +30,7 @@ collections:
         multiple: true
         create: true
         required: false
-        options: ["drupal"]
+        options: ["drupal", "talks"]
   - label: "Today I Learned"
     name: "til"
     folder: "src/til/2021"
