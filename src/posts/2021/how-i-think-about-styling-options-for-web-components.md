@@ -1,6 +1,9 @@
 ---
 title: How I Think About Styling Options for Web Components
-description: Still learning, but here is my current thought.
+description: |-
+  Still learning, but here is my current thought.
+
+  A video walking through the codepen demo
 author: Brian
 date: 2021-02-19T19:28:32.796Z
 ---
