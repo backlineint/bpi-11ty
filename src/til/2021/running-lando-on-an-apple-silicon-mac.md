@@ -5,8 +5,7 @@ description: While I've done some development on my M1 MacBook, I had been
   plunge today.
 author: Brian
 date: 2021-02-20T20:23:29.236Z
-tags:
-  - drupal
+tags: null
 ---
 While I've done some NodeJS based development on my M1 MacBook, I had been procrastinating on doing anything Docker based. I had an opportunity to take the plunge today and decided to go for it.
 
