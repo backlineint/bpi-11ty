@@ -21,6 +21,8 @@ Assumptions:
 
 `.lando.yml`
 
+`phpunit.xml`
+
 Inside your newly created Drupal directory, configure Lando:
 
 `lando init`
@@ -57,6 +59,27 @@ Advanced settings:
 Host: database
 
 Complete installation.
+
+Configure phpunit:
+
+Copy `core/phpunit.xml.dist` to `phpunit.xml`
+
+Replace the following lines in phpunit.xml
+
+(Update to use sed from here: https://www.drupal.org/docs/automated-testing/phpunit-in-drupal/running-phpunit-tests)
+
+`<phpunit bootstrap="/app/core/tests/bootstrap.php" colors="true"`
+
+```
+    <env name="SIMPLETEST_BASE_URL" value="http://appserver/"/>
+    <env name="SIMPLETEST_DB" value="mysql://drupal9:drupal9@database/drupal9"/>
+    <env name="BROWSERTEST_OUTPUT_DIRECTORY" value="/app/sites/simpletest/browser_output"/>
+```
+
+Create the browser test output directory:
+
+`mkdir -p sites/simpletest/browser_output`
+`chmod -R 777 sites/simpletest`
 
 * Clone the issue fork.
 * Check out a feature branch
