@@ -20,7 +20,7 @@ Here's what I did:
 
 If I run into any quirks as I put it through the paces a bit more, I'll update this post.
 
-Update: Quirks already :)
+**Update**: Quirks already :)
 
 Upon further restarts things seemed to be getting hung up on the message `Scanning to determine which services are ready... Please standby... ?` I was able to get past this by adding the following to `.lando.yml` [as mentioned in this issue](https://github.com/lando/lando/issues/2281#issuecomment-632620604):
 
