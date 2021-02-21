@@ -9,7 +9,7 @@ tags: null
 ---
 While I've done some NodeJS based development on my M1 MacBook, I had been procrastinating on doing anything Docker based. I had an opportunity to take the plunge today and decided to go for it.
 
-My understanding is that [this config is not officially supported](https://github.com/lando/lando/issues/2688) for a variety of reasons~~, but for me it pretty much just worked~~.
+My understanding is that [this config is not officially supported](https://github.com/lando/lando/issues/2688) for a variety of reasons, ~~but for me it pretty much just worked~~.
 
 Here's what I did:
 
