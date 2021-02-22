@@ -84,4 +84,7 @@ Create the browser test output directory:
 * Clone the issue fork.
 * Check out a feature branch
 
+Maybe just use Drupal contributions project instead? https://github.com/thinktandem/drupal-contributions
+
+
 Get to work.
