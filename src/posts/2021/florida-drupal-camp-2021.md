@@ -8,9 +8,9 @@ alt: Title Slide
 tags:
   - drupal
   - talks
+excerpt: "<p>This was my second time giving this talk, and I kind of forgot how dense of a topic this is. One major update was a re-worked example of approaches to scoped styling. (The sandbox probably doesn't make a ton of sense without having someone walk through it. Might try to do a quick recording of it someday.) Next time I do this styling demo, it should go later in the presentation. I think people needed more of a foundation on web component concepts before we get this deep into styling specifics.</p><p>Other odds and ends:<br/>* The way the camp used gather.town was really fun. Hoping we can borrow some of FLDC's great ideas for Midcamp.<br />* Found out about Promet Source's Provus project which is a component based Drupal stater site. We are working on a similar effort at Bounteous.<br />* Hoping to check in on contribution day for a bit.</p>"
 ---
-
-[Slides](https://noti.st/brianperry/bdLuuQ/web-components-through-the-eyes-of-a-newcomer) / [Session Page](https://www.fldrupal.camp/sessions/design-theming-front-end-development/web-components-through-eyes-newcomer) 
+[Slides](https://noti.st/brianperry/bdLuuQ/web-components-through-the-eyes-of-a-newcomer) / [Session Page](https://www.fldrupal.camp/sessions/design-theming-front-end-development/web-components-through-eyes-newcomer)
 
 This was my second time giving this talk, and I kind of forgot how dense of a topic this is. One major update was a re-worked example of approaches to scoped styling:
 

@@ -10,6 +10,8 @@ We've recently started using [Gatsby](https://www.gatsbyjs.com/) on [Bounteous.c
 
 The gatsby-source-drupal plugin pulls data from Drupal’s JSON:API endpoints and makes this data available to React components via Gatsby’s GraphQL API. By default, the plugin imports all data from the source Drupal site. Since for this initial phase Gatsby would only be used to build a small subset of pages, most of this data was unnecessary and also would have the side effect of greatly increasing our build times.
 
+<!--more-->
+
 As an initial attempt to solve this problem, we used Drupal’s [JSON:API Extras module](https://www.drupal.org/project/jsonapi_extras) to only expose the resources that our Gatsby build needed to depend on. This helped, but we still eventually needed to enable the file resource, which pretty much immediately sunk our build times. Gatsby was now importing (and worse yet processing) local versions of years worth of images that we didn’t need to support our new content. We eventually found that it was possible to configure gatsby-source-drupal to only import the files referenced by content that was necessary for our builds, but it required a combination of configuration options that wasn’t completely obvious from the documentation.
 
 The first step was to add the file resource as a [disallowed link type](https://www.gatsbyjs.com/plugins/gatsby-source-drupal/#disallowed-link-types):

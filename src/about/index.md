@@ -12,6 +12,8 @@ As is likely obvious by now, I enjoy doing computer-y things, specifically web d
 
 I currently live in the Chicago Suburbs, but I was born and raised on the East Coast. I grew up in Rhode Island and lived outside of Boston for years before migrating to the Midwest. Speaking of past me, [I performed comedy for years in the Boston area](https://www.improvboston.com/) and beyond. I haven't done that in years, but am always up for a good joke over Zoom.
 
-I'm lucky enough to live with a great family - one rad wife, one whatever kids say to mean cool son, and two legendary cats. I love video games and am a major Nintendo fanboy. I enjoy distance running, coffee, and am suprisingly serious about a good bagel.
+I'm lucky enough to live with a great family - one rad wife, one whatever kids say to mean cool son, and two legendary cats. I love video games and am a major Nintendo fanboy. I enjoy distance running, coffee, and am surprisingly serious about a good bagel.
 
 My greatest dream is that this site is useful to people, including the future version of me (who I can only assume will be named president of the internet.)
+
+<!--more-->

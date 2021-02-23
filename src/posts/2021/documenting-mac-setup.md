@@ -7,6 +7,8 @@ date: 2021-01-28
 
 Between loaners, replacements, and other surprises, over the past year or so I've set up new Mac laptops more than I ever have before. I tend to start fresh rather than migrate in order to get that nice clean digital slate. But what I don't do, is document the process all that well. You're in luck future self, because 4th time is the charm.
 
+<!--more-->
+
 ## Prerequisites
 * Make a cup of coffee.
 * Make sure you have your 2FA apps handy

@@ -13,6 +13,8 @@ My understanding is that [this config is not officially supported](https://githu
 
 Here's what I did:
 
+<!--more-->
+
 * Downloaded and installed the [Docker M1 Tech Preview](https://docs.docker.com/docker-for-mac/apple-m1/)
 * Downloaded the latest [Lando release](https://github.com/lando/lando/releases) (3.0.25 in my case)
 * Installed Lando, being sure to customize the install to not install Docker Desktop over my existing tech preview.
