@@ -10,6 +10,7 @@ tags:
   - talks
 ---
 
+
 [Slides](https://noti.st/brianperry/bdLuuQ/web-components-through-the-eyes-of-a-newcomer) / [Session Page](https://www.fldrupal.camp/sessions/design-theming-front-end-development/web-components-through-eyes-newcomer) 
 
 This was my second time giving this talk, and I kind of forgot how dense of a topic this is. One major update was a re-worked example of approaches to scoped styling:
@@ -22,6 +23,8 @@ This was my second time giving this talk, and I kind of forgot how dense of a to
    ></iframe>
 
 (The sandbox probably doesn't make a ton of sense without having someone walk through it. Might try to do a quick recording of it someday.) Next time I do this styling demo, it should go later in the presentation. I think people needed more of a foundation on web component concepts before we get this deep into styling specifics.
+
+---
 
 I also added an example of using web components with a JS framework - React in this case:
 

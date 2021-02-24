@@ -2,6 +2,7 @@
 {
   "permalink": "drupal.xml",
   "eleventyExcludeFromCollections": true,
+  "templateEngineOverride": "njk,md",
   "metadata": {
     "title": "Brian Perry",
     "subtitle": "A collection of my Drupal related posts",
@@ -33,7 +34,7 @@
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.data.description | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content type="html">{{ post.data.feed_excerpt | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
 </feed>

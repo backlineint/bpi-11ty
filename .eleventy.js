@@ -56,6 +56,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_alias: 'feed_excerpt'
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
