@@ -9,8 +9,6 @@ Creating a feed using the [11ty RSS plugin](https://www.11ty.dev/docs/plugins/rs
 
 Since the plugin required so little configuration, it wasn't clear to me if there was a way to make the plugin aware of a second feed template. As it turns out, the plugin is smart enough to pick up on any number of feed templates, located anywhere in your codebase. I created a `/src/_feeds` directory that contained by default `feeds.njk` template and my new Drupal-specific `drupal.njk` template. As long as you add a unique permalink in this template's json frontmatter, the plugin will generate a new feed for you. In this case I used:
 
-<!--more-->
-
 ```json
   "permalink": "drupal.xml",
 ```

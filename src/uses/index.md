@@ -9,9 +9,6 @@ alt: My desk
 ---
 
 Inspired by [Wes Bos](https://wesbos.com/uses) and [uses.tech](https://uses.tech/), this is a living document that outlines all of the hardware, software, and other gadgets that I use in my day-to-day setup.
-
-<!--more-->
-
 ## Hardware
 
 * Personal - 2020 M1 MacBook Pro 13' - Apple Silicon is the real deal. This is the first Mac in quite a while that I truly love using.

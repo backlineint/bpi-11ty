@@ -4,7 +4,6 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const excerpt = require('eleventy-plugin-excerpt');
 
 async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
   if(alt === undefined) {
@@ -61,10 +60,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(pluginRss);
-
-  eleventyConfig.addPlugin(excerpt, {
-    excerptSeparator: '<!--more-->'
-  });
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
