@@ -9,9 +9,9 @@ tags:
 ---
 I've been lucky enough to be a guest on a few Drupal related podcasts recently, continuing my long standing trend of talking to anyone who will listen.
 
-[Drupal Easy Podcast](https://www.drupaleasy.com/podcast) - Back in January, Mike Anello had me on to talk about Front End Components on [Episode 238](https://www.drupaleasy.com/podcast/2021/01/drupaleasy-podcast-238-front-end-components-beginners-brian-perry). We mostly focused on the basics, which was a nice change of pace compared to the component integration talk I had been giving recently.
+[Drupal Easy Podcast](https://www.drupaleasy.com/podcast): Back in January, Mike Anello had me on to talk about Front End Components on [Episode 238](https://www.drupaleasy.com/podcast/2021/01/drupaleasy-podcast-238-front-end-components-beginners-brian-perry). We mostly focused on the basics, which was a nice change of pace compared to the component integration talk I had been giving recently.
 
-[Talking Drupal](https://talkingdrupal.com/) - the folks at Talking Drupal recently decided to have a rotating co-host seat for four week stretches, and were nice enough to invite me to be the first to occupy the seat. Thus far I've been around to chat about:
+[Talking Drupal](https://talkingdrupal.com/): the folks at Talking Drupal recently decided to have a rotating co-host seat for four week stretches and were nice enough to invite me to be the first to occupy the seat. Thus far I've been around to chat about:
 
 * [Starting a Drupal Career](https://talkingdrupal.com/282) with Mike Anello (I swear Mike is following me)
 * [Tugboat](https://www.tubgoat.qa/) with Matt Westgate
