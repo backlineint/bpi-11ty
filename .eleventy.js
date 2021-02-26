@@ -5,6 +5,7 @@ const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const htmlEntities = require('html-entities')
+const md = require('markdown-it')();
 
 async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
   if(alt === undefined) {
@@ -57,7 +58,10 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addNunjucksFilter("feedEncode", function(value) { return htmlEntities.encode(value) });
+  eleventyConfig.addNunjucksFilter("feedEncode", function(value) {
+    const valueToEncode = value ? md.render(value) : '';
+    return htmlEntities.encode(valueToEncode)
+  });
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,

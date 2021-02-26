@@ -34,7 +34,7 @@
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.data.feed_excerpt | feedEncode }}</content>
+    <content type="html">{{ post.data.feed_excerpt | htmlToAbsoluteUrls(absolutePostUrl) | feedEncode }}</content>
   </entry>
   {%- endfor %}
 </feed>
