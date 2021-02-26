@@ -8,3 +8,7 @@ tags:
   - drupal
 ---
 Grab examples from Bounteous site.
+
+Maybe re-work this to be about hygen / emulsify
+
+And maybe this could be open sourced somehow?
