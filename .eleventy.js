@@ -4,7 +4,6 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const htmlEntities = require('html-entities')
 const md = require('markdown-it')();
 
 async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
@@ -59,8 +58,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksFilter("feedEncode", function(value) {
-    const valueToEncode = value ? md.render(value) : '';
-    return htmlEntities.encode(valueToEncode)
+    return value ? md.render(value) : '';
   });
 
   eleventyConfig.setFrontMatterParsingOptions({
