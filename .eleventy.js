@@ -4,6 +4,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const md = require('markdown-it')();
 
 async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
   if(alt === undefined) {
@@ -54,6 +55,15 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "LLL d, yyyy"
     );
+  });
+
+  eleventyConfig.addNunjucksFilter("feedEncode", function(value) {
+    return value ? md.render(value) : '';
+  });
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_alias: 'feed_excerpt'
   });
 
   // Syntax Highlighting for Code blocks
