@@ -86,5 +86,15 @@ Create the browser test output directory:
 
 Maybe just use Drupal contributions project instead? https://github.com/thinktandem/drupal-contributions
 
+Coder/PHPCS
+
+Follow instructions here:
+https://www.drupal.org/docs/contributed-modules/code-review-module/installing-coder-sniffer
+
+Followed VS Code Related steps here:
+https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code
+
+Addressed missing phpcs message:
+https://stackoverflow.com/questions/47174009/visual-studio-code-unable-to-locate-phpcs
 
 Get to work.
