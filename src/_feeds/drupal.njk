@@ -26,7 +26,7 @@
         <item>
             <title>{{ post.data.title }}</title>
             <link>{{ absolutePostUrl }}</link>
-            <description>{{ post.data.feed_excerpt | htmlToAbsoluteUrls(absolutePostUrl) | feedEncode | escapeXml }}</description>
+            <description>{{ post.data.feed_excerpt | htmlToAbsoluteUrls(absolutePostUrl) | feedEncode }}</description>
             <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
             <dc:creator>{{ metadata.author.name }}</dc:creator>
             <guid>{{ absolutePostUrl }}</guid>
