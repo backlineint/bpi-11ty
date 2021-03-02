@@ -11,8 +11,6 @@ jobs:
         with:
           node-version: 14.x
       - name: npm install, build
-        with:
-          node-version: 14.x
         run: |
           npm install
           npm run build
