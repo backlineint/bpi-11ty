@@ -1,6 +1,6 @@
 ---
 title: Adding Excerpts to an 11ty RSS Feed
-description: There are a couple of ways to add excerpts to 11ty feeds, heres what I ended up choosing for this site.
+description: There are a couple of ways to add excerpts to 11ty feeds, here is a look at the approach I ended up using for this site.
 author: Brian
 date: 2021-03-02
 ---
