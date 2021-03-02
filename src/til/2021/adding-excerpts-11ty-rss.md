@@ -11,6 +11,8 @@ There are a handful of options out there for handling excerpts with 11ty. [eleve
 
 Slightly buried in the docs to customize front matter parsing is an example of [parsing excerpts from content](https://www.11ty.dev/docs/data-frontmatter-customize/#example-parse-excerpts-from-content) using additional options from the gray-matter package. I was only able to access the excerpt in my feed if I used an excerpt alias for some reason, so I ended up adding the following to my 11ty config:
 
+---
+
 ```js
 eleventyConfig.setFrontMatterParsingOptions({
   excerpt: true,
