@@ -1,20 +1,33 @@
-name: CI
-on: [push]
+name: Lighthouse CI for Netlify sites
+on: pull_request
 jobs:
-  lhci:
-    name: Lighthouse
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: npm install, build
+      - name: Install & Build
         run: |
           npm install
-          npm run build
-      - name: run Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.7.x
-          lhci autorun
+          npm build
+      - name: Wait for the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1
+        id: netlify
+        with:
+          site_name: 'peaceful-payne-1a2c1f'
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ steps.netlify.outputs.url }}
+            ${{ steps.netlify.outputs.url }}/about/
+            ${{ steps.netlify.outputs.url }}/all/
+            ${{ steps.netlify.outputs.url }}/jams/2021/hades/
+            ${{ steps.netlify.outputs.url }}/posts/2021/gatsby-source-drupal-only-referenced-images/
+          budgetPath: ./budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
