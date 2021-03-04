@@ -31,7 +31,7 @@ jobs:
             ${{ steps.netlify.outputs.url }}/jams/2021/hades/
             ${{ steps.netlify.outputs.url }}/posts/2021/gatsby-source-drupal-only-referenced-images/
           budgetPath: ./budget.json
-          uploadArtifacts: true
+          # uploadArtifacts: true
           temporaryPublicStorage: true
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
