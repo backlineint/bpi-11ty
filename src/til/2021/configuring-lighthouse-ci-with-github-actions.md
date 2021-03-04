@@ -1,7 +1,6 @@
 ---
 title: Configuring Lighthouse CI with Github Actions
-description: I'll be spending time auditing web performance over the next couple
-  of weeks, and wanted to start with some simple baseline measurement. Lighthouse CI was an easy entry point - here are my setup using Github actions.
+description: I'll be spending time auditing web performance over the next couple of weeks, and wanted to start with some simple baseline measurement. Lighthouse CI was an easy entry point - here's how I set it up using Github actions.
 author: Brian
 date: 2021-03-03T20:34:15.697Z
 ---
@@ -33,7 +32,7 @@ This is just the default example from the docs, I'll be defining what the actual
 
 Next I created `.github/workflows/ci.yml` with the following contents:
 
-```yml
+{% highlight yml 11 %}
 name: Lighthouse CI for Netlify sites
 on: pull_request
 jobs:
@@ -59,47 +58,47 @@ jobs:
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
-            ${ { steps.netlify.outputs.url }}
-            ${ { steps.netlify.outputs.url }}/about/
-            ${ { steps.netlify.outputs.url }}/all/
-            ${ { steps.netlify.outputs.url }}/jams/2021/hades/
-            ${ { steps.netlify.outputs.url }}/posts/2021/gatsby-source-drupal-only-referenced-images/
+            ${{ steps.netlify.outputs.url }}
+            ${{ steps.netlify.outputs.url }}/about/
+            ${{ steps.netlify.outputs.url }}/all/
+            ${{ steps.netlify.outputs.url }}/jams/2021/hades/
+            ${{ steps.netlify.outputs.url }}/posts/2021/gatsby-source-drupal-only-referenced-images/
           budgetPath: ./budget.json
           temporaryPublicStorage: true
-```
+{% endhighlight %}
 
-This isn't the default recipe, but it allowed me to wait for Netlify's deploy preview to complete, and then run lighthouse on the actual preview site. In my case, I also needed to bump things up to a more recent version of node instead of the default. I also removed `uploadArtifacts: true` in my case, as I don't know that I really need the reports to persist long term.
+This isn't the default recipe, but it allowed me to wait for Netlify's deploy preview to complete and then run lighthouse on the actual preview site. In my case I also needed to bump things up to a more recent version of node instead of the default. I also removed `uploadArtifacts: true` as I don't know that I really need the reports to persist long term (I can always re-enable this later).
 
-At this point, I had the lighthouse reports running, but I had to dig into the build logs to get them. Thankfully it was possible to configure [Github Status Checks](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md#github-status-checks) to see the results right in the Github pull request UI. First I had to authorize [the Lighthouse CI Github App](https://github.com/apps/lighthouse-ci) which provided my with an authorization token. Under the settings for my repository I had to add that token as a repository secret called `LHCI_GITHUB_APP_TOKEN`. Finally, I had to add two sections to my `.github/workflows/ci.yml`
+At this point, I had the lighthouse reports running, but I had to dig into the build logs to get them. Thankfully it was possible to configure [Github status checks](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md#github-status-checks) to see the results right in the Github pull request UI. I had to authorize [the Lighthouse CI Github App](https://github.com/apps/lighthouse-ci) which provided me an authorization token. Under the settings for my repository I had to add that token as a repository secret called `LHCI_GITHUB_APP_TOKEN`. To add the checks to my CI job I had to add two sections to my `.github/workflows/ci.yml`.
 
 First, I had to add a reference to the related git history:
 
-```yml
+{% highlight yml 2-3 %}
 steps:
   - uses: actions/checkout@v2
     with:
-      ref: ${ { github.event.pull_request.head.sha }}
-```
+      ref: ${{ github.event.pull_request.head.sha }}
+{% endhighlight %}
 
-I missed this part initially, and without it the status checks will be sent, but they won't be able to be tied to the correct PR.
+I missed this part initially. Without it the status checks will be sent, but they won't be able to be tied to the correct PR.
 
 Lastly, I had to add a the repository secret as an environment variable:
 
-```yml
+{% highlight yml 11-12 %}
 - name: Audit URLs using Lighthouse
   uses: treosh/lighthouse-ci-action@v7
   with:
     urls: |
-      ${ { steps.netlify.outputs.url }}
-      ${ { steps.netlify.outputs.url }}/about/
-      ${ { steps.netlify.outputs.url }}/all/
-      ${ { steps.netlify.outputs.url }}/jams/2021/hades/
-      ${ { steps.netlify.outputs.url }}/posts/2021/gatsby-source-drupal-only-referenced-images/
+      ${{ steps.netlify.outputs.url }}
+      ${{ steps.netlify.outputs.url }}/about/
+      ${{ steps.netlify.outputs.url }}/all/
+      ${{ steps.netlify.outputs.url }}/jams/2021/hades/
+      ${{ steps.netlify.outputs.url }}/posts/2021/gatsby-source-drupal-only-referenced-images/
     budgetPath: ./budget.json
     temporaryPublicStorage: true
   env:
-    LHCI_GITHUB_APP_TOKEN: ${ { secrets.LHCI_GITHUB_APP_TOKEN }}
-```
+    LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+{% endhighlight %}
 
 With all of that in place I now see entries for each lighthouse check, and can click on the details link to launch the report.
 
