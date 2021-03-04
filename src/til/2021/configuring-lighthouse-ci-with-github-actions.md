@@ -105,4 +105,4 @@ With all of that in place I now see entries for each lighthouse check, and can c
 
 {% image "./src/til/2021/lighthouse_ci.png", "Example lighthouse checks", false, "object-cover h-full w-full rounded ring-2 ring-indigo-500" %}
 
-This site isn't actually what I'm auditing, but it still looks like I've got some work to do.
+This site isn't actually what I'm auditing, but it still looks like I've got some work to do :)
