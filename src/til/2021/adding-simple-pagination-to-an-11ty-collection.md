@@ -11,6 +11,8 @@ date: 2021-03-07T17:00:30.991Z
 
 At its simplest, pagination can be enabled by adding the `pagination` key to your template's front matter. For example, the first example from the [pagination docs](https://www.11ty.dev/docs/pagination/) shows how to page over a dataset also defined in your front matter:
 
+---
+
 {% highlight yml %}
 ---
 pagination:
