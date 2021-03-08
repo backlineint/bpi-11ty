@@ -9,7 +9,7 @@ date: 2021-03-07T17:00:30.991Z
 ---
 11ty can handle pagination really well, but finding the right subset of the many pagination features can be a little difficult to figure out. In my case, I just wanted something really simple so that I didn't end up with endlessly scrolling list pages as this site grows. Since this site uses [Tailwind](https://tailwindcss.com/), I decided to aim for something similar to the [simple card footer from Tailwind UI](https://tailwindui.com/components/application-ui/navigation/pagination#component-0797a02a34692167c369d134e7a6f9c5).
 
-At its simplest, pagination can be enabled by adding the `pagination` key to your template's front matter. For example, the first example from the [pagination docs](https://www.11ty.dev/docs/pagination/) shows how to page over a dataset also defined in your front matter:
+At its simplest, page data can be enabled by adding the `pagination` key to your template's front matter. The first example from the [pagination docs](https://www.11ty.dev/docs/pagination/) shows how to page over a dataset also defined in your front matter:
 
 ---
 
@@ -85,7 +85,7 @@ Now on to the pager itself. First let's look at displaying the current page and 
 {% endif %}
 {% endhighlight %}
 
-As you can see in that code snippet, 11ty's gives us a bunch of helpful data in the pagination object. We can use `pagination.pageLinks.length` to determine if there is even enough data to page - if there is only one page, we don't render the pagination at all. We're also doing a tiny little bit of math to determine the current range of posts that are displayed (I should have warned you that there would be math.) In `(pagination.pageNumber * pagination.size) + 1` we're adding 1 because page number is zero indexed. And we can use `collections.all.length` for the overall number of posts. 
+As you can see in that code snippet, 11ty's gives us a bunch of helpful data in the pagination object. We can use `pagination.pageLinks.length` to determine if there is even enough data to page - if there is only one page, we don't render the pagination at all. We're also doing a tiny little bit of math to determine the current range of posts that are displayed (I should have warned you that there would be math.) In `(pagination.pageNumber * pagination.size) + 1` we're adding 1 because page number is zero indexed. And we can use `collections.all.length` for the overall number of posts.
 
 Next, let's add the previous and next links. I based this on [an example from an 11ty github issue](https://github.com/11ty/eleventy/issues/455#issuecomment-474026138):
 
@@ -104,13 +104,13 @@ Next, let's add the previous and next links. I based this on [an example from an
 </nav>
 {% endhighlight %}
 
-If there is a `previousPageLink` or `nextPageLink` we're displaying as a link, otherwise we're displaying as a span to indicate that the option is disabled. And the previous or next page of results is available in `pagination.previousPageHref` and `pagination.nextPageHref` respectively.
+If there is a `previousPageLink` or `nextPageLink` we're displaying as a link, otherwise we're displaying as a span to indicate that the option is disabled. And the link to the previous or next page of results is available in `pagination.previousPageHref` and `pagination.nextPageHref` respectively.
 
 After layering in some Tailwind classes the end result looked like this:
 
 {% image "./src/til/2021/pagination.png", "Pagination example", false, "object-cover h-full w-full rounded ring-2 ring-indigo-500" %}
 
-Putting it all together, here's the final pagination partial. I'm using `length` rather than `collections.all.length` so this pagination can be used with other collections.
+Putting it all together, here's the final pagination partial. I'm using a variable `length` rather than `collections.all.length` so this pagination partial can be used with other collections.
 
 <script src="https://gist-it.appspot.com/github/backlineint/bpi-11ty/blob/master/src/_includes/partials/pagination.html"></script>
 
