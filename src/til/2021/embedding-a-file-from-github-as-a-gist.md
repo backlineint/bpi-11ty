@@ -4,7 +4,7 @@ description: In cases where prism.js syntax highlighting isn't practical on my
   site, these tools to create a gist-like embed from any github file have come
   in handy.
 author: Brian
-date: 2021-03-07T17:00:09.879Z
+date: 2021-03-09T23:19:12.888Z
 ---
 This is probably the first personal site I've ever had that has quality [syntax highlighting for code snippets](https://www.11ty.dev/docs/plugins/syntaxhighlight/). But there are still cases where it would be easier to include an example from a github repository wholesale. I've found a couple of services that handle this nicely.
 
