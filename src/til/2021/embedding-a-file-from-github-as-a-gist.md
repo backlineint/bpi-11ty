@@ -11,6 +11,8 @@ This is probably the first personal site I've ever had that has quality [syntax 
 * [Gist It](https://gist-it.appspot.com/)
 * [Embed Like Gist](https://emgithub.com/)
 
+---
+
 I've been using Gist It, because the styles on this site conflict with Embed Like Gist.
 
 For either of these services, it is as easy as embedding a script tag within the markdown file for my post.
