@@ -1,17 +1,15 @@
 ---
 title: Running Lighthouse CI Server Locally
-description: "While it would be better in almost every way to host Lighthouse CI
+description: While it would be better in almost every way to host Lighthouse CI
   Server somewhere, running it locally can still be a useful way to to collect
   some baseline performance measurements. These are the steps I followed to run
-  an instance locally and collect some initial data."
+  an instance locally and collect some initial data.
 author: Brian
 date: 2021-03-10T23:10:55.432Z
 imagePath: ./src/til/2021/lhci_server.png
 alt: Top level Lighthouse comparison
 ---
-While I had previously [set up Lighthouse CI with Github Actions](/til/2021/configuring-lighthouse-ci-with-github-actions/) and found it useful, I found myself looking longingly at the [reports provided by Lighthouse CI Server](https://twitter.com/_developit/status/1266112451155841024) as a way to compare results over time. While the docs are mainly focused on running on a public server with persistent storage (which is clearly the most useful way to do this,) I couldn't help but wonder if I could run the server locally to capture some quick data comparing a few specific changes.
-
-Turns out you absolutely can. The docs provide [an example Docker container to use locally](https://twitter.com/_developit/status/1266112451155841024), but I went with the even lower-fi solution.
+I had previously [set up Lighthouse CI with Github Actions](/til/2021/configuring-lighthouse-ci-with-github-actions/), but I still found myself looking longingly at the [reports provided by Lighthouse CI Server](https://twitter.com/_developit/status/1266112451155841024) as a way to compare results over time. While the docs are mainly focused on running on a public server with persistent storage (which is clearly the most useful way to do this,) I couldn't help but wonder if I could run the server locally to capture some quick data comparing a few specific changes. Turns out you absolutely can. The docs provide [an example Docker container to use locally](https://twitter.com/_developit/status/1266112451155841024), but I went with the even lower-fi solution.
 
 ---
 
@@ -33,11 +31,11 @@ While I was messing around with `package.json` I added the following scripts:
 },
 {% endhighlight %}
 
-With those scripts in place, I started the server by running:
+With those scripts in place, I can start the server by running:
 
     npm run lhci:server
 
-And then ran the wizard by running:
+And then run the wizard with:
 
     npm run lhci:wizard
 
@@ -60,12 +58,12 @@ module.exports = {
 
 In my case, I added `lighthouserc.js` to the `.gitignore` for my project because I didn't want these local settings to override the Lighthouse settings I already had working with Github Actions. You may also want to ignore `.lighthouseci/` and `db.sql` as well if you are only planning to store this information locally.
 
-With that in place I can now run:
+With that in place I can now run
 
     npm run lhci:audit
 
-Which will start the Lighthouse CI Server and record results for the current commit. If I run this as commits are made I can get a granular comparison of the impact of changes.
+which will start the Lighthouse CI Server and record results for the current commit. If I run this repeatedly as commits are made, I can get a granular comparison of the impact of my changes.
 
 {% image "./src/til/2021/lhci_server_compare.png", "Example lighthouse checks", false, "object-cover h-full w-full rounded ring-2 ring-indigo-500" %}
 
-Not denying that this would be more useful incorporated into your main CI process, but this local approach can still be useful to benchmark a feature branch, or some other quick or small scale measurement.
+This would certainly be more useful incorporated into your main CI process, but this local approach can still be useful for benchmarking a feature branch or making some other small scale measurement.
