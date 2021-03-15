@@ -7,7 +7,7 @@ date: 2021-03-14T23:09:28.782Z
 tags:
   - drupal
 ---
-[Midcamp](https://www.midcamp.org/), my local Drupal Camp is back March 24 - 27. Midcamp went virtual at the beginning of lockdown last year and while it was a rousing success, we were definitely making it up as we went along. This time around we're trying a new format with an increased focus on community building, that we're also hoping will help combat the dreaded Zoom fatigue. [The schedule](https://www.midcamp.org/2021/schedule) breaks down as follows:
+[Midcamp](https://www.midcamp.org/), my local Drupal Camp, is back March 24 - 27. Midcamp went virtual at the beginning of lockdown last year and while it was a rousing success, we were definitely making it up as we went along. This time around we're trying a new format with an increased focus on community building which we're also hoping will help combat the Zoom fatigue we're all feeling. [The schedule](https://www.midcamp.org/2021/schedule) breaks down as follows:
 
 * Wednesday, March 24: Get Started with Drupal - content focused on introducing attendees to Drupal.
 * Thursday, March 25: Meet the Drupal Community - lightly structured community building activities.
@@ -16,7 +16,7 @@ tags:
 
 Within that schedule, here are a few things I'm extra excited about:
 
-* In additional to our traditional Zoom rooms, we'll also have a space in [Gather.town](https://gather.town/) for us to virtually socialize. I've been spending some time moving around sprites, and hope to have some surprises in store.
+* In addition to our traditional Zoom rooms, we'll also have a space in [Gather.town](https://gather.town/) for us to virtually socialize. I've been spending some time moving around sprites, and expect to have some surprises in store.
 * On Thursday, [Matt Glaman](https://www.drupal.org/u/mglaman) will be leading a workshop on writing JavaScript tests using [Nightwatch.js](https://nightwatchjs.org/)
 * And on contribution day, one of the featured initiatives will be adding additional test coverage to Drupal's new [Olivero theme](https://www.drupal.org/about/core/strategic-initiatives/olivero).
 
