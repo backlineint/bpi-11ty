@@ -3,7 +3,7 @@ title: Gearing Up For Midcamp 2021
 description: My local Drupal Camp is back this year for another virtual event
   and trying some new things to combat Zoom fatigue.
 author: Brian
-date: 2021-03-14T23:09:28.782Z
+date: 2021-03-15T19:56:40.808Z
 tags:
   - drupal
 ---
