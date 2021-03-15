@@ -9,6 +9,8 @@ tags:
 ---
 [Midcamp](https://www.midcamp.org/), my local Drupal Camp, is back March 24 - 27. Midcamp went virtual at the beginning of lockdown last year and while it was a rousing success, we were definitely making it up as we went along. This time around we're trying a new format with an increased focus on community building which we're also hoping will help combat the Zoom fatigue we're all feeling. [The schedule](https://www.midcamp.org/2021/schedule) breaks down as follows:
 
+---
+
 * Wednesday, March 24: Get Started with Drupal - content focused on introducing attendees to Drupal.
 * Thursday, March 25: Meet the Drupal Community - lightly structured community building activities.
 * Friday, March 26: Share Your Knowledge - a one day [unconference format](http://unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/)
