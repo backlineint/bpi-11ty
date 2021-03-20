@@ -32,6 +32,7 @@
   "dependencies": {
     "@11ty/eleventy-img": "^0.7.4",
     "autoprefixer": "^10.1.0",
+    "eleventy-plugin-youtube-embed": "^1.5.0",
     "postcss": "^8.2.1"
   }
 }
