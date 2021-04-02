@@ -10,7 +10,7 @@
     "lhci:server": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "git+https://github.com/backlineint/eleventy-plugin-rss.git#rss-filters",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@lhci/cli": "^0.7.0",
