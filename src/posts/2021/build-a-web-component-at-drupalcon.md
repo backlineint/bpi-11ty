@@ -1,6 +1,8 @@
 ---
 title: Help Build a Decoupled Menu Web Component at DrupalCon
-description: As part of the Decoupled Menus Initiative I've started work on Generic Drupal Web Components project. If you're interested in getting involved, we could use your help at DrupalCon North America.
+description: As part of the Decoupled Menus Initiative I've started work on the
+  Generic Drupal Web Components project. If you're interested in getting
+  involved, we could use your help at DrupalCon North America.
 author: Brian
 date: 2021-04-06T21:43:45.949Z
 tags:
