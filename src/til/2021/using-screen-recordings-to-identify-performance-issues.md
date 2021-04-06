@@ -11,6 +11,8 @@ Sometimes when auditing Lighthouse results the amount of feedback can make it di
 
 [Web Page Test](https://www.webpagetest.org/) provides a number of easy options to generate a recording of your test runs. When setting up a test, check 'capture video' in the advanced options. You can then save the recording as a video or a gif after clicking on the 'watch video' link in the related column. Or you can enter the timeline view, configure options like frame size and slow motion, and export your recording.
 
+---
+
 {% image "./src/til/2021/bpd_test.png", "Example lighthouse checks", false, "object-cover h-full w-full rounded ring-2 ring-indigo-500" %}
 
 Here is an example [recording of the homepage of this site being loaded](/static/img/bpdev.gif). You'll see a pretty obvious problem - the menu is loading as expanded and then collapsing when JavaScript executes, which is likely causing [cumulative layout shift](https://web.dev/cls/). I've found that a slow motion video can also make less glaring issues clear, like web fonts shifting during load.
