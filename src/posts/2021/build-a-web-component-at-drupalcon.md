@@ -9,7 +9,7 @@ tags:
   - drupal
 ---
 
-Next week at DrupalCon North America as part of the [Decoupled Menus Initiative](https://events.drupal.org/northamerica2021/decoupled-menus-day) I'll be participating in the Decoupled Menu Hackathon. Members of the community will be coming together to build a variety of menu components using different approaches and frameworks as a way to exercise a new menu endpoint provided by the [Decoupled Menus module](https://www.drupal.org/project/decoupled_menus), along with the infrastructure supporting the new general project type on Drupal.org.
+Next week at DrupalCon North America as part of the [Decoupled Menus Initiative](https://events.drupal.org/northamerica2021/decoupled-menus-day) I'll be participating in the [Decoupled Menu Hackathon](https://events.drupal.org/northamerica2021/news/decoupled-menus-initiative-hosting-contribution-hackathon). Members of the community will be coming together to build a variety of menu components using different approaches and frameworks as a way to exercise a new menu endpoint provided by the [Decoupled Menus module](https://www.drupal.org/project/decoupled_menus), along with the infrastructure supporting the new general project type on Drupal.org.
 
 Leading up to DrupalCon I've also begun work on the [Generic Drupal Web Components](https://www.drupal.org/project/gdwc) project. Starting with a menu component, it aims to create a library of generic web components that are accessible, framework agnostic, possible to style, and easy to use with data provided by Drupal. Here's a quick video overview:
 
@@ -27,5 +27,6 @@ Looking forward to collaborating with everyone and seeing how many different way
 
 Resources:
 * [Decoupled Menus Day](https://events.drupal.org/northamerica2021/decoupled-menus-day)
+* [The Decoupled Menus Initiative is hosting a contribution hackathon](https://events.drupal.org/northamerica2021/news/decoupled-menus-initiative-hosting-contribution-hackathon)
 * [Generic Drupal Web Components Storybook and Documentation](https://gdwc.netlify.app/)
 * [Meta issue for Generic Drupal Web Components tasks for DrupalCon](https://www.drupal.org/project/gdwc/issues/3207329)
