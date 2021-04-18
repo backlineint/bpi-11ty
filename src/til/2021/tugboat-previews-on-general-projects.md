@@ -1,5 +1,5 @@
 ---
-title: Tugboat Previews on General Projects
+title: Configuring Tugboat Live Previews For Drupal General Projects
 description: While the documentation focuses on Drupal Module and Theme
   projects, it turns out Tugboat Live Previews can also be easily configured to
   run for NodeJS based Drupal General Projects as well.
