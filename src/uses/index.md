@@ -9,6 +9,9 @@ alt: My desk
 ---
 
 Inspired by [Wes Bos](https://wesbos.com/uses) and [uses.tech](https://uses.tech/), this is a living document that outlines all of the hardware, software, and other gadgets that I use in my day-to-day setup.
+
+---
+
 ## Hardware
 
 * Personal - 2020 M1 MacBook Pro 13' - Apple Silicon is the real deal. This is the first Mac in quite a while that I truly love using.
@@ -29,10 +32,12 @@ I keep a pretty stock Mac config, but can't live without the following:
 
 * [Unclutter](https://unclutterapp.com/) - Keeps the digital mess hidden away. Without this installed, my Mac feels broken.
 * Chrome (yeah, [I know](https://chromeisbad.com/))
-*  [Evernote](https://evernote.com/) - a disorganized mess of years and years of notes
+* [Evernote](https://evernote.com/) - a disorganized mess of years and years of notes
 * [Things](https://culturedcode.com/things/) I use it to follow some form of [GTD](https://gettingthingsdone.com/).
 * [YNAB](https://www.youneedabudget.com/) - changed my life financially
 * [Bartender](https://www.macbartender.com/) - hide menu bar clutter
+* [Oh My ZSH](https://ohmyz.sh/) - terminal themes and other niceties
+* [Raycast](https://raycast.com/) - highly configurable alternative to Spotlight. Complete tasks like launching your next Zoom meeting or creating a Jira ticket with just a few keystrokes.
 
 ## Desk Setup
 

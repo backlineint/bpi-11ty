@@ -3,6 +3,9 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+const md = require('markdown-it')();
 
 async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
   if(alt === undefined) {
@@ -55,8 +58,20 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addNunjucksFilter("feedEncode", function(value) {
+    return value ? md.render(value) : '';
+  });
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_alias: 'feed_excerpt'
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(embedYouTube);
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON

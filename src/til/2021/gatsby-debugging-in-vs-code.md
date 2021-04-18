@@ -11,6 +11,8 @@ My initial need was client side debugging, which was covered well in the appropr
 
 In my case, Gatsby was not in the root of my workspace, so I needed to make a few adjustments. For the client side configuration, I needed to change the webRoot to `"${workspaceFolder}/gatsby"`. Adjusting the Node configurations were a little trickier. Updating the path to the Gatsby binary alone didn't work because VS Code was launching the console from the root of the workspace, which wasn't a Gatsby project. Eventually after [digging around in the VS Code docs](https://code.visualstudio.com/docs/editor/variables-reference#_environment-variables) I found that you could set a current working directory option. Adding `"cwd": "${workspaceRoot}/gatsby"` to each of the Node configurations did the trick.
 
+---
+
 The resulting launch.json looked like this:
 
 ```json
