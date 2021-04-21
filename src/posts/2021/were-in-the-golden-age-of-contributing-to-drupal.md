@@ -33,7 +33,7 @@ A ridiculous amount of work went into all of these developer experience improvem
 
 During his keynote at DrupalCon this year Dries shared a walkthrough from [Matthew Grasmick](https://www.drupal.org/u/grasmash) that provided quite the counterpoint. I'll let the video speak for itself:
 
-https://youtu.be/IIxbaT-jmNc?t=4383
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IIxbaT-jmNc?start=4383" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This is a completely fair reminder that while we've come a long way, we also still have a long way to go to modernize our contributor experience. 
 
