@@ -20,7 +20,7 @@ Created an issue to upgrade (for SSR)
 
 SSR
 
-Context
+Context - was this a thing?
 
 IE 11 Opt in
 
@@ -31,3 +31,6 @@ Reactive controllers - like partial components. Controller adapters for other fr
 Lit Labs - React - https://github.com/lit/lit/tree/main/packages/labs/react
 React isn't solving this? Well we will.
 
+Animation library
+
+But want Lit to stay simple...
