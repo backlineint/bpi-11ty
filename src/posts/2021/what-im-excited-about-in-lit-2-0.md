@@ -6,7 +6,7 @@ description: I've really enjoyed the developer experience improvements that
 author: Brian
 date: 2021-04-21T17:12:58.792Z
 ---
-I tuned in for the live Lit launch event on YouTube today, which was surprisingly ~~long~~ detailed. I've really enjoyed the developer experience improvements that Lit-element and Lit-html have offered for building web components, and I'm even more excited for these new features in Lit 2.0
+I tuned in for the live Lit launch event on YouTube today, which was surprisingly ~~long~~ detailed. I've really enjoyed the developer experience improvements that Lit-element and Lit-html have offered for building web components, and I'm even more excited for these new features in Lit 2.0.
 
 ---
 
