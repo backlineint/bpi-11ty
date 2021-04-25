@@ -3,8 +3,12 @@ title: 2021 Best Picture Nominees
 description: I watched all the best picture nominees so you don't have to.
 author: Brian
 date: 2021-04-25T13:46:34.030Z
+imagePath: ./src/jams/2021/metal.jpeg
+alt: Riz Ahmed at a drum kit
 ---
 I've always wanted to watch all of the best picture nominees, but in past years I've never been able to make it through the whole list. Thanks to the pandemic, I was finally able to achieve my goal this year. All of the films were easily streamable, and staying home and watching movies all the time was much more socially acceptable for some reason. Since no one asked, here are some quick thoughts on the films:
+
+---
 
 **The Sound of Metal** - not just my favorite film this year, probably one of my favorite movies in years. The sound design is incredible, but the story it tells about recovery is even better.
 
