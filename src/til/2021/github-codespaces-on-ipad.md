@@ -1,6 +1,8 @@
 ---
-title: Running Github Codespaces on an  iPad
-description: GitHub Codespaces can provide a fully featured development environment on an iPad. Heres how I configured a Node environment to make updates to this site.
+title: Running GitHub Codespaces on an  iPad
+description: GitHub Codespaces can provide a fully featured development
+  environment on an iPad. Heres how I configured a Node environment to make
+  updates to this site.
 author: Brian
 date: 2021-06-02T07:16:22.040Z
 imagePath: ./src/til/2021/github_codespace.png
