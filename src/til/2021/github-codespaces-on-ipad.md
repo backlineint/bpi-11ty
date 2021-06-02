@@ -1,29 +1,26 @@
 ---
-title: Github Codespaces On iPad
-description: The dream of web development on iPad is getting closer.
+title: Running Github Codespaces on an  iPad
+description: GitHub Codespaces can provide a fully featured development environment on an iPad. Heres how I configured a Node environment to make updates to this site.
 author: Brian
-date: 2021-05-22T15:16:22.040Z
+date: 2021-06-02T07:16:22.040Z
+imagePath: ./src/til/2021/github_codespace.png
+alt: Editing a post using Codespaces on Safari iPadOS
 ---
-Add [remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+I've been experimenting on and off with [GitHub Codespaces](https://github.com/features/codespaces) since gaining access to the beta. My long term goal is to set up an environment for Drupal contribution, similar to Ofer Shaal's great [ddev Gitpod](https://github.com/shaal/ddev-gitpod) project. In the meantime, I've used Codespaces for a slightly more frivolous pursuit.
 
-F1, search for 'Add Development Container Configuration Files...'
+I occasionally find myself using my iPad and wanting to do a small amount of coding, or a relatively minor update to this site. Codespaces finally makes this practical. You can update and commit code, run commands in a terminal, and even view your development site in Safari with live reload enabled. Paired with the [Magic Keyboard](https://www.apple.com/shop/product/MXQT2LL/A/magic-keyboard-for-ipad-pro-11-inch-3rd-generation-and-ipad-air-4th-generation-us-english-black) (speaking of frivolous) this setup can do a surprisingly good job approximating an honest-to-goodness local development setup.
 
-Select a container configuration definition (Node in this case)
+Here's an overview of how I configured Codespaces in the repository for this site:
 
-Pick your node version.
+---
 
-Commit the files in .devcontainer
+* In VSCode, download and enable the [remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for VSCode. (Alternatively you could [download the appropriate dev container](https://github.com/microsoft/vscode-dev-containers/tree/main/containers), but the VSCode integration is really nice.)
+* Hit F1 and search for 'Add Development Container Configuration Files...'
+* Select a container configuration definition. In my case it was Node.
+* Select your node version.
+* This will create a .devcontainer directory in your project that contains a dockerfile and a configuration file. Commit these files to version control and push to your GitHub repository.
+* In the Github Web UI on your iPad you should now be able to select 'Open with Codespaces' under the 'Code' dropdown button. From there you can create a new Codespace, or later launch one of your existing Codespaces.
 
-Push to github
+In the future I'd like to automate a few things like installing node packages when the container starts up. I'm guessing that can just be added to the dockerfile.
 
-Create your codespace.
-
-Is it possible to have a start script? I had to NPM install, etc.
-
-Photo of setup
-
-Codespaces with magic keyboard is a really nice experience.
-
-What is coming in iOS 15 now that M1 is in iPad pro?
-
-Want to get back to working on Drupal codespace.
+Now that the iPad is running the same M1 chip as the MacBook, I have a suspicion (hope? dream?) that the line between MacOS and iPadOS will start to blur in some ways that will make web development on an iPad more practical. But in the meantime it is nice to have this option in repos where I might want to make quick updates without dragging out my big boy laptop.
