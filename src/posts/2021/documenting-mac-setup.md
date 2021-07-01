@@ -66,15 +66,15 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 ## Terminal and SSH
 
 * Install developer tools by typing `git` in the terminal.
-* Follow [First Time Github Guide](https://kbroman.org/github_tutorial/pages/first_time.html)
+* Follow [First Time Github Guide](https://kbroman.org/github_tutorial/pages/first_time.html), but [use a stronger key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 * Change git editor to Nano: `git config --global core.editor "nano"`
 * [Add key to ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* Add new key to Bitbucket, Github, and Acquia accounts (Acquia requires an RSA key. Hopefully they will support ed25519 in the future, but in the meantime using RSA will make your life easier.)
+* Add new key to Bitbucket, Github, Gitlab, Pantheon and Acquia accounts as needed (Acquia requires an RSA key. Hopefully they will support ed25519 in the future, but in the meantime using RSA will make your life easier.)
 * Install [Oh My Zsh](https://ohmyz.sh/#install)
 * [Installed Powerline Fonts](https://github.com/powerline/fonts#installation) via git clone
 * Change zsh theme by editing ~/.zshrc and change to agnoster
 * Update ZSH permissions [as outlined here](https://github.com/ohmyzsh/ohmyzsh/issues/6835).
-* Terminal Preferences - Changed default profile to Ocean and font to 'Source Code Pro for Powerline'
+* Terminal Preferences - Changed default profile to Pro and font to 'Source Code Pro for Powerline' size 11.
 * VS Code User Preferences - Changed Terminal › Integrated: Font Family to 'Source Code Pro for Powerline'
 * Install [Homebrew](https://brew.sh/)
 
@@ -113,17 +113,11 @@ I also add the following settings in the user version of settings.json
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "terminal.integrated.shell.osx": "/bin/zsh",
     "files.associations": {
       "*.theme": "php"
     },
 }
 ```
-
-Also install:
-
-* [PHP Storm](https://www.jetbrains.com/phpstorm/) because their visual merge conflict resolution tool is still way better than VS Code.
-* [Atom](https://atom.io/) as a lightweight alternative for when you need one.
 
 ## Local Development Environment
 
@@ -137,26 +131,16 @@ Also install:
 * Upgrade PHP Version `brew install php@7.4`. Follow manual installation steps to add this new php version to your path.
 * [Download composer](https://getcomposer.org/download/)
 * Move composer into path `mv composer.phar /usr/local/bin/composer`
-* Downgrade to Composer 1 (hopefully won't be necessary next time) `composer self-update --1`
 * Increase composer memory limit by running `echo 'export COMPOSER_MEMORY_LIMIT=-1' >> ~/.zshrc`
+* Hoping to stick with composer 2, but if I need to downgrade to Composer 1 `composer self-update --1`
 
-### Vagrant
-
-* Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* Download and install [Vagrant](https://www.vagrantup.com/)
-* Install the following Vagrant plugins:
-
-  * `vagrant plugin install vagrant-auto_network`
-  * `vagrant plugin install vagrant-hostsupdater`
-  * `vagrant plugin install vagrant-vbguest`
-* [Install Ansible via Homebrew](https://formulae.brew.sh/formula/ansible#default)
-
-### Docker
+### Docker-y Things
 
 * Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
   * In Docker Desktop preferences, disable starting Docker upon login.
 * Install [Lando](https://github.com/lando/lando/releases) (assuming that the version packaged with Lando is reasonable, you could install Docker Desktop as part of installing Lando)
+* Install [Pantheon LocalDev](https://pantheon.io/product/localdev)
 
 ## Dock
 
@@ -176,5 +160,20 @@ Also install:
 * Descript
 * [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
 * Creative Cloud / Photoshop
+* [PHP Storm](https://www.jetbrains.com/phpstorm/) because their visual merge conflict resolution tool is still way better than VS Code.
+* [Atom](https://atom.io/) for a lightweight editor when you need one.
+
+### Vagrant
+
+Fingers crossed that my Vagrant days are over, but if needed:
+
+* Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* Download and install [Vagrant](https://www.vagrantup.com/)
+* Install the following Vagrant plugins:
+
+  * `vagrant plugin install vagrant-auto_network`
+  * `vagrant plugin install vagrant-hostsupdater`
+  * `vagrant plugin install vagrant-vbguest`
+* [Install Ansible via Homebrew](https://formulae.brew.sh/formula/ansible#default)
 
 You did it. Take a nap.
