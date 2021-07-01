@@ -2,52 +2,66 @@
 title: Documenting My Mac Setup
 description: "Hey future self: this is what you do when you set up a new Mac"
 author: Brian
-date: 2021-01-28
+date: 2021-07-01T13:13:53.883Z
 ---
-
 Between loaners, replacements, and other surprises, over the past year or so I've set up new Mac laptops more than I ever have before. I tend to start fresh rather than migrate in order to get that nice clean digital slate. But what I don't do, is document the process all that well. You're in luck future self, because 4th time is the charm.
 
 ---
 
 ## Prerequisites
+
 * Make a cup of coffee.
 * Make sure you have your 2FA apps handy
 * For anything that isn't in version control or in the cloud (hopefully that list gets smaller every time you do this), copy over files using a USB drive.
 
 ## System Preferences
+
 * If I'm using multiple monitors, configure monitor orientation under System Preferences -> Displays.
 * System Preferences -> Trackpad:
+
   * Enable tap to click.
   * Secondary click - click in bottom right corner.
 * System Preferences -> Dock: Position on screen left.
 * Finder -> Preferences -> Show Hard Disks on the Desktop
 * Sign in and enable iCloud
 * System Preferences -> Mission Control
+
   * Disable 'automatically rearrange spaces based on most recent use'
   * Disable 'displays have separate spaces'
 
 ## Software
 
 * Install Chrome (yeah, [I know](https://chromeisbad.com/))
-  * Sync to Google Account (has the added bonus of syncing all extensions)
+
+  * Sync to Google Account if possible (has the added bonus of syncing all extensions.) Otherwise install:
+    * [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh?hl=en)
+    * [Zoom Scheduler](https://chrome.google.com/webstore/detail/zoom-scheduler/kgjfgplpablkjnlkjmjdecgdpfankdle?hl=en-US)
+    * Last Pass or [1Password](https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en)
+    * [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
+    * [Ghostery](https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?hl=en) (and turn off the stats overlay in settings.)
+    * [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc)
+    * [Dreditor](https://chrome.google.com/webstore/detail/dreditor/dhdpoembhlojpmehepeadblhglloobao/related?hl=en-US)
+    * [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en)
+    * [Evernote Web Clipper](https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc?hl=en)
+    * [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca/related?hl=en)
   * Log into [Last Pass extension](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US)
   * Preferences -> Appearance - turn off 'Show warning before quitting with ⌘Q' (I've always been baffled about that being a default)
 * Install Firefox and Edge for cross browser fun.
 * Sign in to Mac App Store and download the following apps and utilities:
-  *  [Evernote](https://evernote.com/).
+
+  * [Evernote](https://evernote.com/).
   * Install [Things](https://culturedcode.com/things/) and set up Things Cloud.
   * Set up all the [Slacks](https://slack.com/).
   * [Unclutter](https://unclutterapp.com/) (can't live without this one) Configure to store files in ~/Downloads
   * [Lightshot Screenshot](https://app.prntscr.com/en/index.html)
-  * [Dropover](https://dropoverapp.com/)
-  * Pomodoro timer - currently using [Flow](https://flowapp.info/)
+  * Pomodoro timer - currently using [](https://flowapp.info/)[Be Focused Pro](https://apps.apple.com/us/app/be-focused-pro-focus-timer/id961632517?mt=12)
   * [Giphy Capture](https://giphy.com/apps)
-* Set up email. Outlook if a work machine. Log into [Hey](https://hey.com/).
+* Set up email. Outlook or Gmail for work depending on company preferences. Log into [Hey](https://hey.com/) (or whatever you replaced it with after your subscription lapses - some real nonsense going on at Basecamp).
 * Download and configure [Bartender](https://www.macbartender.com/)
+* Download and activate [Deckset](https://www.deckset.com/)
+* Install [Raycast](https://raycast.com/) and [replace the spotlight hotkey](https://www.notion.so/Hotkey-56103210375b4fc78b63a7c5e7075fb7).
 * Tunes - Install Sonos and set up account in Apple Music App.
 * [Postman](https://www.postman.com/) - for API debugging
-* [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
-* Creative Cloud / Photoshop
 
 ## Terminal and SSH
 
@@ -67,6 +81,7 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 ## IDE(s)
 
 Download and install [Visual Studio Code](https://code.visualstudio.com/) and enable the following extensions:
+
 * [Markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
@@ -106,6 +121,7 @@ I also add the following settings in the user version of settings.json
 ```
 
 Also install:
+
 * [PHP Storm](https://www.jetbrains.com/phpstorm/) because their visual merge conflict resolution tool is still way better than VS Code.
 * [Atom](https://atom.io/) as a lightweight alternative for when you need one.
 
@@ -125,9 +141,11 @@ Also install:
 * Increase composer memory limit by running `echo 'export COMPOSER_MEMORY_LIMIT=-1' >> ~/.zshrc`
 
 ### Vagrant
+
 * Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * Download and install [Vagrant](https://www.vagrantup.com/)
 * Install the following Vagrant plugins:
+
   * `vagrant plugin install vagrant-auto_network`
   * `vagrant plugin install vagrant-hostsupdater`
   * `vagrant plugin install vagrant-vbguest`
@@ -136,6 +154,7 @@ Also install:
 ### Docker
 
 * Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
   * In Docker Desktop preferences, disable starting Docker upon login.
 * Install [Lando](https://github.com/lando/lando/releases) (assuming that the version packaged with Lando is reasonable, you could install Docker Desktop as part of installing Lando)
 
@@ -145,13 +164,17 @@ Also install:
 * Add: Outlook, Things, Chrome, VS Code, Slack, Terminal, Evernote, Sonos
 
 ## Things to install as needed:
+
 * [Audio Hijack](https://rogueamoeba.com/audiohijack/)
-* [Deckset](https://www.deckset.com/)
 * Dropbox (hoping to find my way out of Dropbox...)
 * [EncryptMe](https://encrypt.me/)
 * FileZilla
 * [Kap](https://getkap.co/)
 * [Mmhmm](https://www.mmhmm.app/)
 * XCode
+* Sonos
+* Descript
+* [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
+* Creative Cloud / Photoshop
 
 You did it. Take a nap.
