@@ -33,7 +33,17 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 
 * Install Chrome (yeah, [I know](https://chromeisbad.com/))
 
-  * Sync to Google Account (has the added bonus of syncing all extensions)
+  * Sync to Google Account if possible (has the added bonus of syncing all extensions.) Otherwise install:
+    * [Instapaper](https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh?hl=en)
+    * [Zoom Scheduler](https://chrome.google.com/webstore/detail/zoom-scheduler/kgjfgplpablkjnlkjmjdecgdpfankdle?hl=en-US)
+    * Last Pass or [1Password](https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en)
+    * [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
+    * [Ghostery](https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?hl=en) (and turn off the stats overlay in settings.)
+    * [Xdebug Helper](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc)
+    * [Dreditor](https://chrome.google.com/webstore/detail/dreditor/dhdpoembhlojpmehepeadblhglloobao/related?hl=en-US)
+    * [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en)
+    * [Evernote Web Clipper](https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc?hl=en)
+    * [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca/related?hl=en)
   * Log into [Last Pass extension](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US)
   * Preferences -> Appearance - turn off 'Show warning before quitting with ⌘Q' (I've always been baffled about that being a default)
 * Install Firefox and Edge for cross browser fun.
@@ -46,12 +56,12 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
   * [Lightshot Screenshot](https://app.prntscr.com/en/index.html)
   * Pomodoro timer - currently using [](https://flowapp.info/)[Be Focused Pro](https://apps.apple.com/us/app/be-focused-pro-focus-timer/id961632517?mt=12)
   * [Giphy Capture](https://giphy.com/apps)
-* Set up email. Outlook if a work machine. Log into [Hey](https://hey.com/).
+* Set up email. Outlook or Gmail for work depending on company preferences. Log into [Hey](https://hey.com/) (or whatever you replaced it with after your subscription lapses - some real nonsense going on at Basecamp).
 * Download and configure [Bartender](https://www.macbartender.com/)
+* Download and activate [Deckset](https://www.deckset.com/)
+* Install [Raycast](https://raycast.com/) and [replace the spotlight hotkey](https://www.notion.so/Hotkey-56103210375b4fc78b63a7c5e7075fb7).
 * Tunes - Install Sonos and set up account in Apple Music App.
 * [Postman](https://www.postman.com/) - for API debugging
-* [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
-* Creative Cloud / Photoshop
 
 ## Terminal and SSH
 
@@ -156,12 +166,15 @@ Also install:
 ## Things to install as needed:
 
 * [Audio Hijack](https://rogueamoeba.com/audiohijack/)
-* [Deckset](https://www.deckset.com/)
 * Dropbox (hoping to find my way out of Dropbox...)
 * [EncryptMe](https://encrypt.me/)
 * FileZilla
 * [Kap](https://getkap.co/)
 * [Mmhmm](https://www.mmhmm.app/)
 * XCode
+* Sonos
+* Descript
+* [Sketch](https://www.sketch.com/) - because that is what you see most designs in these days.
+* Creative Cloud / Photoshop
 
 You did it. Take a nap.
