@@ -10,6 +10,8 @@ I recently needed a way to detect which framework was being used to build a site
 
 Here's a simple example that outputs information about the detected framework, and also tests for the existence of a specific framework.
 
+---
+
 ```js
 const { listFrameworks, hasFramework } = require("@netlify/framework-info");
 
