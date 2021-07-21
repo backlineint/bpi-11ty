@@ -14,3 +14,5 @@ Long standing React repo issue.
 Working around it with a wrapper.
 
 Working around it with @lit-labs/react
+
+I hope adoption of web components forces Facebook's hand here. But if not, the Lit team taking things into their own hands is the next best thing.
