@@ -9,6 +9,8 @@ One of the most exciting features of web components is the fact that they can be
 
 As [the test results](https://custom-elements-everywhere.com/libraries/react/results/results.html) show, the limitations fall into two main categories. The first is that React can't automatically pass non-string data like arrays and objects into custom element properties.
 
+---
+
 Take for example this election results tracker component: `<results-tracker>`. All of the properties of the component are strings, except for candidates, which expects an array of objects like:
 
 ```json
