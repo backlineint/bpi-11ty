@@ -1,5 +1,5 @@
 ---
-title: Using Apollo Without React
+title: Using Apollo Client Without React
 description: By default, Apollo Client 3.0 expects that you are using React, but
   importing Apollo using a slightly different entry point allows you to use
   Apollo in a vanilla JS project.
