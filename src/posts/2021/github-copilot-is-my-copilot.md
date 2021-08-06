@@ -15,4 +15,6 @@ Back to me. While github copilot was off, I was left thinking of the way you com
 
 So I turned it back on. With my expectations tempered, I found that I really liked what essentially feels like a more intelligent autocomplete. I’ve learned to ignore when it is wrong, which is often. But when it suggests the chunk of code I need, it feels like magic.
 
+Helps me push through documentation.
+
 Wrapping comment on ethical concerns.
