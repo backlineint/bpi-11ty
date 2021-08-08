@@ -10,6 +10,8 @@ date: 2021-08-08T14:15:30.082Z
 * Typedocs
 * Jest
 * Structure of exports...
-* ESlint and prettier - save on edit in vscode. Also run as scripts for pre-commit hooks.
+* ESlint and prettier
+** save on edit in vscode.
+** Also run as scripts for pre-commit hooks. https://www.npmjs.com/package/@typescript-eslint/eslint-plugin then https://github.com/prettier/eslint-config-prettier Then lint staged. 
 * NVMrc
 * Husky
