@@ -10,4 +10,6 @@ date: 2021-08-08T14:15:30.082Z
 * Typedocs
 * Jest
 * Structure of exports...
-* ESlint and prettier
+* ESlint and prettier - save on edit in vscode. Also run as scripts for pre-commit hooks.
+* NVMrc
+* Husky
