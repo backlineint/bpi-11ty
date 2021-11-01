@@ -18,7 +18,7 @@ Between loaners, replacements, and other surprises, over the past year or so I'v
 
 * If I'm using multiple monitors, configure monitor orientation under System Preferences -> Displays.
 * System Preferences -> Trackpad:
-
+  * Uncheck 'Look up & data detectors'.
   * Enable tap to click.
   * Secondary click - click in bottom right corner.
 * System Preferences -> Dock: Position on screen left.
