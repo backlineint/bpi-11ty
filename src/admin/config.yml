@@ -14,7 +14,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Posts"
     name: "posts"
-    folder: "src/posts/2021"
+    folder: "src/posts/2022"
     create: true
     editor:
       preview: true
@@ -33,7 +33,7 @@ collections:
         options: ["drupal", "talks"]
   - label: "Today I Learned"
     name: "til"
-    folder: "src/til/2021"
+    folder: "src/til/2022"
     create: true
     editor:
       preview: true
@@ -52,7 +52,7 @@ collections:
         options: ["drupal"]
   - label: "Jams"
     name: "jams"
-    folder: "src/jams/2021"
+    folder: "src/jams/2022"
     create: true
     editor:
       preview: true
