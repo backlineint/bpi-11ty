@@ -8,6 +8,7 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const md = require("markdown-it")();
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const litPlugin = require("@lit-labs/eleventy-plugin-lit");
 
 async function imageShortcode(
   src,
@@ -91,6 +92,11 @@ module.exports = function (eleventyConfig) {
     components: "src/_includes/components/**/*.webc",
   });
 
+  eleventyConfig.addPlugin(litPlugin, {
+    mode: "worker",
+    componentModules: ["node_modules/@gdwc/components/container.js"],
+  });
+
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
@@ -112,6 +118,10 @@ module.exports = function (eleventyConfig) {
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
+    "./node_modules/@gdwc/components/dist/components.js":
+      "./static/js/gdwc-components.js",
+    "./node_modules/@gdwc/components/dist/style.css":
+      "./static/css/gdwc-styles.css",
   });
 
   // Copy Image Folder to /_site

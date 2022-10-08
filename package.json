@@ -32,6 +32,8 @@
   "dependencies": {
     "@11ty/eleventy-img": "^0.7.4",
     "@11ty/eleventy-plugin-webc": "^0.4.0",
+    "@gdwc/components": "^3.6.0",
+    "@lit-labs/eleventy-plugin-lit": "^0.2.3",
     "autoprefixer": "^10.1.0",
     "eleventy-plugin-youtube-embed": "^1.5.0",
     "postcss": "^8.2.1"
