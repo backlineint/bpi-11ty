@@ -10,8 +10,8 @@
     "lhci:server": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-rss": "git+https://github.com/backlineint/eleventy-plugin-rss.git#rss-filters",
+    "@11ty/eleventy": "^2.0.0-canary.16",
+    "@11ty/eleventy-plugin-rss": "^1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@lhci/cli": "^0.7.0",
     "@lhci/server": "^0.7.0",
@@ -31,6 +31,9 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^0.7.4",
+    "@11ty/eleventy-plugin-webc": "^0.4.0",
+    "@gdwc/components": "^3.6.0",
+    "@lit-labs/eleventy-plugin-lit": "^0.2.3",
     "autoprefixer": "^10.1.0",
     "eleventy-plugin-youtube-embed": "^1.5.0",
     "postcss": "^8.2.1"

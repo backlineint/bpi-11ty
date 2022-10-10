@@ -5,10 +5,19 @@ const htmlmin = require("html-minifier");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
-const md = require('markdown-it')();
+const md = require("markdown-it")();
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const litPlugin = require("@lit-labs/eleventy-plugin-lit");
 
-async function imageShortcode(src, alt, small = false, classes = "object-cover h-full w-full", sizes = "100vw") {
-  if(alt === undefined) {
+async function imageShortcode(
+  src,
+  alt,
+  small = false,
+  classes = "object-cover h-full w-full",
+  sizes = "100vw"
+) {
+  if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
@@ -17,16 +26,22 @@ async function imageShortcode(src, alt, small = false, classes = "object-cover h
 
   let metadata = await Image(src, {
     widths: widths,
-    formats: ['webp', 'jpeg'],
-    outputDir: "./_site/img/"
+    formats: ["webp", "jpeg"],
+    outputDir: "./_site/img/",
   });
 
   let lowsrc = metadata.jpeg[0];
 
   return `<picture>
-    ${Object.values(metadata).map(imageFormat => {
-      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
-    }).join("\n")}
+    ${Object.values(metadata)
+      .map((imageFormat) => {
+        return `  <source type="${
+          imageFormat[0].sourceType
+        }" srcset="${imageFormat
+          .map((entry) => entry.srcset)
+          .join(", ")}" sizes="${sizes}">`;
+      })
+      .join("\n")}
       <img
         src="${lowsrc.url}"
         width="${lowsrc.width}"
@@ -40,10 +55,7 @@ async function imageShortcode(src, alt, small = false, classes = "object-cover h
 
 module.exports = function (eleventyConfig) {
   // Also copy images if they exist alongside content
-  eleventyConfig.addTemplateFormats([
-    "jpg",
-    "png"
-  ]);
+  eleventyConfig.addTemplateFormats(["jpg", "png"]);
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -58,13 +70,13 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addNunjucksFilter("feedEncode", function(value) {
-    return value ? md.render(value) : '';
+  eleventyConfig.addNunjucksFilter("feedEncode", function (value) {
+    return value ? md.render(value) : "";
   });
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
-    excerpt_alias: 'feed_excerpt'
+    excerpt_alias: "feed_excerpt",
   });
 
   // Syntax Highlighting for Code blocks
@@ -72,6 +84,18 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  eleventyConfig.addPlugin(pluginWebc, {
+    // Glob to find no-import global components
+    components: "src/_includes/components/**/*.webc",
+  });
+
+  eleventyConfig.addPlugin(litPlugin, {
+    mode: "worker",
+    componentModules: ["node_modules/@gdwc/components/container.js"],
+  });
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
@@ -93,7 +117,11 @@ module.exports = function (eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
-    "./static/css/prism-tomorrow.css",
+      "./static/css/prism-tomorrow.css",
+    "./node_modules/@gdwc/components/dist/components.js":
+      "./static/js/gdwc-components.js",
+    "./node_modules/@gdwc/components/dist/style.css":
+      "./static/css/gdwc-styles.css",
   });
 
   // Copy Image Folder to /_site
@@ -112,7 +140,7 @@ module.exports = function (eleventyConfig) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
