@@ -4,7 +4,6 @@ _tmp/
 node_modules/
 _site/
 *git/
-package-lock.json
 .env
 .cache
 lighthouserc.js
