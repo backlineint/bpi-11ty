@@ -19,31 +19,8 @@ eleventyExcludeFromCollections: true
 
   {% renderTemplate "webc" %}
   <construction-banner></construction-banner>
+  <home-hero></home-hero>
   {% endrenderTemplate %}
-
-  <div
-    class="mb-8 mt-12 bg-blue-500 rounded shadow border container sm:grid sm:grid-cols-3 sm:gap-2"
-  >
-    <div class="col-span-1">
-      {% image "./src/static/img/about.jpg", "Bro day selfie", true %}
-    </div>
-    <div class="col-span-2 prose lg:prose-lgx text-purple-50 p-10">
-      <h2>Congratulations on visting one of the internet's many websites!</h2>
-      <p>
-        This specific one is mine. I use this site to document
-        <a href="/posts/">things I've been thinking about</a>,
-        <a href="/til/">things I've been learning</a>,
-        <a href="/uses">things I use</a>, and
-        <a href="/jams/">things I really like</a>.
-      </p>
-      <p>
-        I'm a front end developer who lives in the Chicago suburbs, I'm a member
-        of the <a href="https://www.drupal.org/community">Drupal community</a>,
-        I often <a href="https://noti.st/brianperry">present at tech events</a>,
-        I have a super awesome family, and I really like Nintendo.
-      </p>
-    </div>
-  </div>
 
   <section
     class="container max-w-4xl mt-6 px-6 pt-6 border-dashed border-4 border-purple-200 rounded-lg"
