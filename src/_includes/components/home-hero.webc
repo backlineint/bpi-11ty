@@ -8,10 +8,8 @@
       all: revert;
     }
     .home-hero {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin: var(--size-8) 0 var(--size-6);
-    }
+        margin: var(--size-8) 0 var(--size-6);
+      }
     .home-hero__image img {
       height: 100%;
       max-width: 100%;
@@ -22,6 +20,12 @@
       padding: var(--size-8);
       font-family: var(--font-sans);
       background-color: var(--gdwc-surface-1);
+    }
+    @media (min-width: 640px) {
+      .home-hero {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
   </style>
 <gdwc-container class="hero-container">
