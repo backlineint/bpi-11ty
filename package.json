@@ -32,7 +32,7 @@
   "dependencies": {
     "@11ty/eleventy-img": "^2.0.0",
     "@11ty/eleventy-plugin-webc": "^0.4.0",
-    "@gdwc/components": "^3.6.0",
+    "@gdwc/components": "^4.0.0",
     "@lit-labs/eleventy-plugin-lit": "^0.2.3",
     "autoprefixer": "^10.1.0",
     "eleventy-plugin-youtube-embed": "^1.5.0",

@@ -3,6 +3,7 @@
     --gdwc-font-family: var(--font-mono);
     background: var(--gradient-26);
     --gdwc-shadow: var(--shadow-3);
+    --gdwc-padding: var(--size-3);
     margin-top: var(--size-7);
     color: white;
   }
