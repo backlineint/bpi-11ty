@@ -122,6 +122,10 @@ module.exports = function (eleventyConfig) {
       "./static/js/gdwc-components.js",
     "./node_modules/@gdwc/components/dist/style.css":
       "./static/css/gdwc-styles.css",
+    "./node_modules/@shoelace-style/shoelace/dist/assets/icons/brightness-high-fill.svg":
+      "./node_modules/@shoelace-style/shoelace/dist/assets/icons/brightness-high-fill.svg",
+    "./node_modules/@shoelace-style/shoelace/dist/assets/icons/moon-fill.svg":
+      "./node_modules/@shoelace-style/shoelace/dist/assets/icons/moon-fill.svg",
   });
 
   // Copy Image Folder to /_site
