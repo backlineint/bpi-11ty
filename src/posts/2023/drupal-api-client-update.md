@@ -5,11 +5,11 @@ author: Brian
 date: 2023-11-06
 ---
 
-At [DrupalCon Pittsburgh](https://events.drupal.org/pittsburgh2023), a team of interested community members submitted [The Drupal API Client Project](https://www.drupal.org/project/api_client) to be considered for funding as part of the [Pitchburgh Innovation Contest](https://www.drupal.org/innovation/pitchburgh-2023). (If you missed it, check out [our pitch video](https://www.youtube.com/watch?v=EdTnrPZUW98) below, along with the [original proposal](https://docs.google.com/document/d/1MAUCgxJmSHxA6ozVXp6U49UMPF3sJPrInz1rnl9Wf_4/edit?pli=1#heading=h.9531ycwaflet).)
+At [DrupalCon Pittsburgh](https://events.drupal.org/pittsburgh2023), a team of interested community members submitted [The Drupal API Client Project](https://www.drupal.org/project/api_client) to be considered for funding as part of the [Pitchburgh Innovation Contest](https://www.drupal.org/innovation/pitchburgh-2023). (If you missed it, check out our pitch video below, along with the [original proposal](https://docs.google.com/document/d/1MAUCgxJmSHxA6ozVXp6U49UMPF3sJPrInz1rnl9Wf_4/edit?pli=1#heading=h.9531ycwaflet).)
 
 <iframe src="https://www.youtube.com/embed/EdTnrPZUW98?si=qSF4Kml7J9p9HFMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-While competing community maintained API clients exist, Drupal does not offer any official JavaScript utilities to simplify the process of consuming data outside of the CMS. Our goal is to assemble a group of contributors in order to combine the best of existing Drupal API clients into a set of utilities that can both address common use cases with little configuration, and also be extended to support the needs of a diverse JavaScript ecosystem.
+While competing community maintained API clients exist, Drupal does not offer any official JavaScript utilities to simplify the process of consuming data outside of the CMS. Our goal is to assemble a group of contributors to combine the best of existing Drupal API clients into a set of utilities that can both address common use cases with little configuration, and also be extended to support the needs of a diverse JavaScript ecosystem.
 
 We were [lucky enough to be selected](https://youtu.be/tNa4XKb3zds?si=di_9WNupphYQrnPi&t=4995) by a panel of judges and the Drupal community to recieve funding. Since then, we've made some exciting progress on making our pitch a reality and wanted to share some updates.
 
@@ -30,7 +30,7 @@ Going this deep on our method to get a collection should provide groundwork that
 
 ### 0.1.0 Release
 
-Speaking of the POC, we're excited to announce that [we've published our first release](https://www.npmjs.com/package/@drupal-api-client/json-api-client) on NPM! You can install it right now using npm (or your package manager of choice):
+Speaking of the POC, we're excited to announce that [we've published our first release](https://www.npmjs.com/package/@drupal-api-client/json-api-client)! You can install it right now using npm (or your package manager of choice):
 
 ```bash
 npm i @drupal-api-client/json-api-client
@@ -38,11 +38,20 @@ npm i @drupal-api-client/json-api-client
 
 [API documentation for the package](https://project.pages.drupalcode.org/api_client/modules/_drupal_api_client_json_api_client) is available on GitLab pages.
 
-Code sandbox
+Included below is a CodeSandbox including a simple example of using the client to get a collection of nodes from a Drupal site. Feel free to fork it and play around!
 
 <iframe src="https://codesandbox.io/embed/drupal-api-client-json-api-client-basic-example-54t589?fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.mjs&theme=dark&view=editor"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="@drupal-api-client/json-api-client Basic Example"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+For the more adventurous, here's a live TypeScript example from our project readme that demonstrates more of the configuration options available:
+
+<iframe src="https://codesandbox.io/embed/drupal-api-client-json-api-client-configuration-options-4wyqrw?fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.ts&theme=dark&view=editor"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="@drupal-api-client/json-api-client Configuration Options"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
@@ -60,3 +69,5 @@ Hands on help - specifically outside of Pantheon.
 Shout out to previous next.
 
 Top contributors.
+
+NedCamp
