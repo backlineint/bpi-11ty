@@ -1,11 +1,15 @@
 ---
 title: An Update on The Drupal API Client
-description: The Drupal API Client Project has made substantial progress, including publshing our first POC release.
+description: The Drupal API Client Project has made substantial progress, including publishing our first POC release.
 author: Brian
-date: 2023-11-06
+date: 2023-11-09
+tags:
+  - drupal
 ---
 
 At [DrupalCon Pittsburgh](https://events.drupal.org/pittsburgh2023), a team of interested community members submitted [The Drupal API Client Project](https://www.drupal.org/project/api_client) to be considered for funding as part of the [Pitchburgh Innovation Contest](https://www.drupal.org/innovation/pitchburgh-2023). (If you missed it, check out our pitch video below, along with the [original proposal](https://docs.google.com/document/d/1MAUCgxJmSHxA6ozVXp6U49UMPF3sJPrInz1rnl9Wf_4/edit?pli=1#heading=h.9531ycwaflet).)
+
+---
 
 <iframe src="https://www.youtube.com/embed/EdTnrPZUW98?si=qSF4Kml7J9p9HFMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -47,7 +51,7 @@ Included below is a CodeSandbox including a simple example of using the client t
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-For the more adventurous, here's a live TypeScript example from our project readme that demonstrates more of the configuration options available:
+For the more adventurous, here's a live TypeScript example from our project readme that demonstrates more of the available configuration options:
 
 <iframe src="https://codesandbox.io/embed/drupal-api-client-json-api-client-configuration-options-4wyqrw?fontsize=14&hidenavigation=1&module=%2Fsrc%2Findex.ts&theme=dark&view=editor"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -56,18 +60,18 @@ For the more adventurous, here's a live TypeScript example from our project read
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-Docs
+This 0.1.0 release represents the initial POC, but we're planning on having continued 0.x releases as we approach 1.0.
 
-0.1.0 represents the POC release, but we're planning on continued releases as we approach 1.0.
+Thanks to [all who contributed to this release](https://git.drupalcode.org/project/api_client/-/graphs/canary?ref_type=heads), including: [coby.sher](https://www.drupal.org/u/cobysher), [pratik_kamble](https://www.drupal.org/u/pratik_kamble), [mitchellmarkoff](https://www.drupal.org/u/mitchellmarkoff), [shrutishende](https://www.drupal.org/u/shrutishende), [elber](https://www.drupal.org/u/elber), [alexmoreno](https://www.drupal.org/u/alexmoreno) and the many others who provided feedback in the issue queue or dropped in on one of our Slack meetings.
 
-### How you can help
+### Obligatory Call for Help
 
-Feedback!
+The Drupal API Client Project is rolling along, but we're still looking for help from the community to make it a success. With the release of this POC, one of the biggest areas we need help is getting general feedback on our work thus far. The wider the feedback we get from the community, the better chance we have to ship something that meets a wide array of decoupled Drupal use cases.
 
-Hands on help - specifically outside of Pantheon.
+We've created a [feedback issue](https://www.drupal.org/project/api_client/issues/3383579) to help guide the conversation, but we're also open to feedback in any form. We're you able to get up and running? Does the current API make sense to you? Is there a particular use case you're hoping to see supported? Let us know!
 
-Shout out to previous next.
+You also may have noted that many of our primary contributors work together at [Pantheon](https://pantheon.io/). While we greatly appreciate Pantheon's support and sponsorship of this project, we're also looking for help from the broader community. We're doing decent job keeping focused on the generic use cases that this project is intended to solve, but having a more diverse array of contributors can only help the end result.
 
-Top contributors.
+If you're interested in contributing, check out our [project page](https://www.drupal.org/project/api_client) on Drupal.org, and join us in the [#api-client](https://www.drupal.org/community/contributor-guide/reference-information/talk/tools/slack) channel on Drupal Slack.
 
-NedCamp
+And if you happen to be interested and on the East Coast, I'll be at [NedCamp](https://nedcamp.org) - both at the contribution day, and [presenting on the API Client project](https://nedcamp.org/sessions/2023/drupal-api-client-project) during session day. Come say hi!
