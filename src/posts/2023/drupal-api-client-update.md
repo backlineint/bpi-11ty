@@ -62,7 +62,7 @@ For the more adventurous, here's a live TypeScript example from our project read
 
 This 0.1.0 release represents the initial POC, but we're planning on having continued 0.x releases as we approach 1.0.
 
-Thanks to [all who contributed to this release](https://git.drupalcode.org/project/api_client/-/graphs/canary?ref_type=heads), including: [coby.sher](https://www.drupal.org/u/cobysher), [pratik_kamble](https://www.drupal.org/u/pratik_kamble), [mitchellmarkoff](https://www.drupal.org/u/mitchellmarkoff), [shrutishende](https://www.drupal.org/u/shrutishende), [elber](https://www.drupal.org/u/elber), [alexmoreno](https://www.drupal.org/u/alexmoreno) and the many others who provided feedback in the issue queue or dropped in on one of our Slack meetings.
+Thanks to [all who contributed to this release](https://git.drupalcode.org/project/api_client/-/graphs/canary?ref_type=heads), including: [coby.sher](https://www.drupal.org/u/cobysher), [pratik_kamble](https://www.drupal.org/u/pratik_kamble), [mitchellmarkoff](https://www.drupal.org/u/mitchellmarkoff), [shrutishende](https://www.drupal.org/u/shrutishende), [elber](https://www.drupal.org/u/elber), [abhisekmazumdar](https://www.drupal.org/u/abhisekmazumdar), [alexmoreno](https://www.drupal.org/u/alexmoreno) and the many others who provided feedback in the issue queue or dropped in on one of our Slack meetings.
 
 ### Obligatory Call for Help
 
@@ -70,7 +70,7 @@ The Drupal API Client Project is rolling along, but we're still looking for help
 
 We've created a [feedback issue](https://www.drupal.org/project/api_client/issues/3383579) to help guide the conversation, but we're also open to feedback in any form. We're you able to get up and running? Does the current API make sense to you? Is there a particular use case you're hoping to see supported? Let us know!
 
-You also may have noted that many of our primary contributors work together at [Pantheon](https://pantheon.io/). While we greatly appreciate Pantheon's support and sponsorship of this project, we're also looking for help from the broader community. We're doing decent job keeping focused on the generic use cases that this project is intended to solve, but having a more diverse array of contributors can only help the end result.
+You also may have noted that many of our primary contributors work together at [Pantheon](https://pantheon.io/). While we greatly appreciate Pantheon's support and sponsorship of this project, we're also looking for help from the broader community. We're doing a decent job keeping focused on the generic use cases that this project is intended to solve, but having a more diverse array of contributors can only help the end result.
 
 If you're interested in contributing, check out our [project page](https://www.drupal.org/project/api_client) on Drupal.org, and join us in the [#api-client](https://www.drupal.org/community/contributor-guide/reference-information/talk/tools/slack) channel on Drupal Slack.
 
